@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { PageHero } from '@/components/site/page-hero'
 import { Section } from '@/components/site/section'
 import { getNewsPost } from '@/lib/content/news'
+import { siteConfig } from '@/lib/site'
 
 export const revalidate = 60
 export const dynamicParams = true
@@ -19,9 +20,22 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
   const { slug } = await params
   const post = await getNewsPost(slug)
   if (!post) notFound()
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${siteConfig.url}/news/${post.slug}#article`,
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.publishedAt,
+    dateModified: post.modifiedAt,
+    mainEntityOfPage: `${siteConfig.url}/news/${post.slug}`,
+    publisher: { '@id': `${siteConfig.url}/#organization` },
+    ...(post.coverImage ? { image: post.coverImage.src } : {}),
+  }
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <PageHero
         sectionId="news-article-hero"
         eyebrow={new Date(post.publishedAt).toLocaleDateString('en-GB', { dateStyle: 'long' })}
