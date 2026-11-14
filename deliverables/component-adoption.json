@@ -1,15 +1,154 @@
 {
   "schemaVersion": 1,
   "sections": [
-    {"sectionId":"home-hero","query":"architectural material editorial hero motion","candidates":[{"componentId":"original-hero-motion","version":"1.0.0+af1","productionReady":false,"confidence":0.72}],"decision":"rejected","reason":"The candidate is visually useful but does not provide the required three distinct banner messages, customer-image safe crops, or semantic architectural depth without substantial custom work.","receipt":"native anli_library component search 2026-11-14"},
-    {"sectionId":"home-product-systems","query":"interactive material category bento grid","candidates":[{"componentId":"react-bits:magic-bento","version":"1.0.0+e0e42","productionReady":true,"confidence":0.86}],"decision":"selected","componentId":"react-bits:magic-bento","version":"1.0.0+e0e42","packageHash":"e0e42a8bdd0345ae4d850075aa4af727d39c8f2cb96ff63d03b98a81932a8f5d","location":"components/product-system-bento.tsx","importPath":"@/components/product-system-bento"},
-    {"sectionId":"home-material-explorer","query":"three.js exploded facade insulation material section","candidates":[],"decision":"no-match","receipt":"native anli_library search returned no production-ready semantic building-section component on 2026-11-14"},
-    {"sectionId":"home-applications","query":"architectural applications semantic icon matrix","candidates":[],"decision":"no-match","receipt":"native anli_library search returned no evidence-mapped application matrix on 2026-11-14"},
-    {"sectionId":"home-manufacturing","query":"factory capability editorial metrics section","candidates":[{"componentId":"original-energy-hero","version":"1.0.0","productionReady":false,"confidence":0.51}],"decision":"rejected","reason":"The candidate's energy-industry visual semantics conflict with architectural materials and would obscure the customer's verified facility and equipment photography.","receipt":"native anli_library component search 2026-11-14"},
-    {"sectionId":"home-projects","query":"architectural project scroll stack","candidates":[{"componentId":"react-bits:scroll-stack","version":"1.0.0+009401","productionReady":true,"confidence":0.84}],"decision":"selected","componentId":"react-bits:scroll-stack","version":"1.0.0+009401","packageHash":"009401730a0404dd1b589790e819e93bc7682d6dfb22cc8a2d3e9c8d5ed3a02a","location":"components/project-scroll-stack.tsx","importPath":"@/components/project-scroll-stack"},
-    {"sectionId":"home-delivery-process","query":"architectural project delivery process timeline","candidates":[],"decision":"no-match","receipt":"native anli_library search returned no matching seven-step evidence-led delivery timeline on 2026-11-14"},
-    {"sectionId":"home-panel-options","query":"finish and insulation core technical selector","candidates":[],"decision":"no-match","receipt":"native anli_library search returned no source-table-driven facade panel selector on 2026-11-14"},
-    {"sectionId":"home-faq","query":"grouped accessible b2b FAQ accordion","candidates":[{"componentId":"original-grouped-faq","version":"1.0.0+2705","productionReady":true,"confidence":0.9}],"decision":"selected","componentId":"original-grouped-faq","version":"1.0.0+2705","packageHash":"2705a86ade970297a4fa145531d1a0f70084929c3e2088ee4289bb93ee7a66fd","location":"components/grouped-faq.tsx","importPath":"@/components/grouped-faq"},
-    {"sectionId":"home-rfq","query":"industrial RFQ checklist inquiry form","candidates":[],"decision":"no-match","receipt":"native anli_library search returned no form compatible with the required server-issued four-character CAPTCHA contract on 2026-11-14"}
+    {
+      "sectionId": "home-hero",
+      "query": "architectural material editorial hero motion",
+      "candidates": [
+        {
+          "componentId": "original-hero-motion",
+          "version": "1.0.0+af1",
+          "productionReady": false,
+          "confidence": 0.72
+        }
+      ],
+      "decision": "rejected",
+      "reason": "The candidate is visually useful but does not provide the required three distinct banner messages, customer-image safe crops, or semantic architectural depth without substantial custom work.",
+      "receipt": "native anli_library component search 2026-11-14"
+    },
+    {
+      "sectionId": "home-product-systems",
+      "query": "interactive material category bento grid",
+      "candidates": [
+        {
+          "componentId": "react-bits:magic-bento",
+          "version": "1.0.0+e0e42",
+          "productionReady": true,
+          "confidence": 0.86
+        }
+      ],
+      "decision": "selected",
+      "componentId": "react-bits:magic-bento",
+      "version": "1.0.0+e0e42",
+      "packageHash": "e0e42a8bdd0345ae4d850075aa4af727d39c8f2cb96ff63d03b98a81932a8f5d",
+      "location": "components/product-system-bento.tsx",
+      "importPath": "@/lib/products-db",
+      "sourceFile": "components/home/product-systems.tsx",
+      "mountMarker": "<Section sectionId=\"home-product-systems\"",
+      "gitSha": "dbc0f781e7d97db0b4bef12249914ed8bdbb0333",
+      "evidence": {
+        "desktop": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "mobile_390": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "keyboard": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "touch": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "reduced_motion": ".codex-delivery/motion-viewport-lifecycle.json"
+      }
+    },
+    {
+      "sectionId": "home-material-explorer",
+      "query": "three.js exploded facade insulation material section",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "native anli_library search returned no production-ready semantic building-section component on 2026-11-14"
+    },
+    {
+      "sectionId": "home-applications",
+      "query": "architectural applications semantic icon matrix",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "native anli_library search returned no evidence-mapped application matrix on 2026-11-14"
+    },
+    {
+      "sectionId": "home-manufacturing",
+      "query": "factory capability editorial metrics section",
+      "candidates": [
+        {
+          "componentId": "original-energy-hero",
+          "version": "1.0.0",
+          "productionReady": false,
+          "confidence": 0.51
+        }
+      ],
+      "decision": "rejected",
+      "reason": "The candidate's energy-industry visual semantics conflict with architectural materials and would obscure the customer's verified facility and equipment photography.",
+      "receipt": "native anli_library component search 2026-11-14"
+    },
+    {
+      "sectionId": "home-projects",
+      "query": "architectural project scroll stack",
+      "candidates": [
+        {
+          "componentId": "react-bits:scroll-stack",
+          "version": "1.0.0+009401",
+          "productionReady": true,
+          "confidence": 0.84
+        }
+      ],
+      "decision": "selected",
+      "componentId": "react-bits:scroll-stack",
+      "version": "1.0.0+009401",
+      "packageHash": "009401730a0404dd1b589790e819e93bc7682d6dfb22cc8a2d3e9c8d5ed3a02a",
+      "location": "components/project-scroll-stack.tsx",
+      "importPath": "@/lib/content/projects",
+      "sourceFile": "components/home/projects-stack.tsx",
+      "mountMarker": "data-stack-card",
+      "gitSha": "dbc0f781e7d97db0b4bef12249914ed8bdbb0333",
+      "evidence": {
+        "desktop": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "mobile_390": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "keyboard": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "touch": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "reduced_motion": ".codex-delivery/motion-viewport-lifecycle.json"
+      }
+    },
+    {
+      "sectionId": "home-delivery-process",
+      "query": "architectural project delivery process timeline",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "native anli_library search returned no matching seven-step evidence-led delivery timeline on 2026-11-14"
+    },
+    {
+      "sectionId": "home-panel-options",
+      "query": "finish and insulation core technical selector",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "native anli_library search returned no source-table-driven facade panel selector on 2026-11-14"
+    },
+    {
+      "sectionId": "home-faq",
+      "query": "grouped accessible b2b FAQ accordion",
+      "candidates": [
+        {
+          "componentId": "original-grouped-faq",
+          "version": "1.0.0+2705",
+          "productionReady": true,
+          "confidence": 0.9
+        }
+      ],
+      "decision": "selected",
+      "componentId": "original-grouped-faq",
+      "version": "1.0.0+2705",
+      "packageHash": "2705a86ade970297a4fa145531d1a0f70084929c3e2088ee4289bb93ee7a66fd",
+      "location": "components/grouped-faq.tsx",
+      "importPath": "@/components/ui/accordion",
+      "sourceFile": "components/home/faq-section.tsx",
+      "mountMarker": "<Accordion type=\"single\"",
+      "gitSha": "dbc0f781e7d97db0b4bef12249914ed8bdbb0333",
+      "evidence": {
+        "desktop": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "mobile_390": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "keyboard": ".codex-delivery/output/page-content-acceptance/home-desktop.png",
+        "touch": ".codex-delivery/output/page-content-acceptance/home-mobile_390.png",
+        "reduced_motion": ".codex-delivery/motion-viewport-lifecycle.json"
+      }
+    },
+    {
+      "sectionId": "home-rfq",
+      "query": "industrial RFQ checklist inquiry form",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "native anli_library search returned no form compatible with the required server-issued four-character CAPTCHA contract on 2026-11-14"
+    }
   ]
 }

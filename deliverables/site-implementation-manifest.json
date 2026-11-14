@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "gitSha": "dbc0f781e7d97db0b4bef12249914ed8bdbb0333",
+  "routes": [
+    "/",
+    "/products",
+    "/projects",
+    "/manufacturing",
+    "/about",
+    "/news",
+    "/contact",
+    "/products/eps-decorative-mouldings",
+    "/products/grc-architectural-elements",
+    "/products/grg-interior-elements",
+    "/products/real-stone-insulated-panel",
+    "/products/stone-effect-insulated-panel",
+    "/products/water-in-sand-insulated-panel",
+    "/products/ultrathin-stone-insulated-panel",
+    "/products/cement-texture-design-objects",
+    "/products/uhpc-custom-components"
+  ],
+  "navigation": [
+    {
+      "label": "Home",
+      "route": "/",
+      "level": 1
+    },
+    {
+      "label": "Products",
+      "route": "/products",
+      "level": 1
+    },
+    {
+      "label": "Projects",
+      "route": "/projects",
+      "level": 1
+    },
+    {
+      "label": "Manufacturing",
+      "route": "/manufacturing",
+      "level": 1
+    },
+    {
+      "label": "About Us",
+      "route": "/about",
+      "level": 1
+    },
+    {
+      "label": "News",
+      "route": "/news",
+      "level": 1
+    },
+    {
+      "label": "Contact",
+      "route": "/contact",
+      "level": 1
+    }
+  ],
+  "productTaxonomy": [
+    {
+      "customerProduct": "EPS Decorative Mouldings",
+      "category": "Architectural Decorative Elements",
+      "route": "/products/eps-decorative-mouldings"
+    },
+    {
+      "customerProduct": "GRC Architectural Decorative Elements",
+      "category": "Architectural Decorative Elements",
+      "route": "/products/grc-architectural-elements"
+    },
+    {
+      "customerProduct": "GRG Interior Decorative Elements",
+      "category": "Architectural Decorative Elements",
+      "route": "/products/grg-interior-elements"
+    },
+    {
+      "customerProduct": "Real-Stone Finish Insulated Decorative Panel",
+      "category": "Insulated Decorative Panels",
+      "route": "/products/real-stone-insulated-panel"
+    },
+    {
+      "customerProduct": "Stone-Effect Finish Insulated Decorative Panel",
+      "category": "Insulated Decorative Panels",
+      "route": "/products/stone-effect-insulated-panel"
+    },
+    {
+      "customerProduct": "Water-in-Sand Finish Insulated Decorative Panel",
+      "category": "Insulated Decorative Panels",
+      "route": "/products/water-in-sand-insulated-panel"
+    },
+    {
+      "customerProduct": "Natural Ultrathin Stone Insulated Decorative Panel",
+      "category": "Insulated Decorative Panels",
+      "route": "/products/ultrathin-stone-insulated-panel"
+    },
+    {
+      "customerProduct": "Cement-Texture Design Objects",
+      "category": "Custom Design Objects",
+      "route": "/products/cement-texture-design-objects"
+    },
+    {
+      "customerProduct": "UHPC Custom Components",
+      "category": "Custom Design Objects",
+      "route": "/products/uhpc-custom-components"
+    }
+  ],
+  "homepageSections": [
+    {
+      "sectionId": "home-hero",
+      "selector": "[data-section-id=\"home-hero\"]",
+      "visibleTitle": "Positioning and primary conversion",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-product-systems",
+      "selector": "[data-section-id=\"home-product-systems\"]",
+      "visibleTitle": "Product discovery",
+      "sourceFile": "components/home/product-systems.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-material-explorer",
+      "selector": "[data-section-id=\"home-material-explorer\"]",
+      "visibleTitle": "Technical understanding",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-applications",
+      "selector": "[data-section-id=\"home-applications\"]",
+      "visibleTitle": "Application fit",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-manufacturing",
+      "selector": "[data-section-id=\"home-manufacturing\"]",
+      "visibleTitle": "Supplier qualification",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-projects",
+      "selector": "[data-section-id=\"home-projects\"]",
+      "visibleTitle": "Project proof",
+      "sourceFile": "components/home/projects-stack.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-delivery-process",
+      "selector": "[data-section-id=\"home-delivery-process\"]",
+      "visibleTitle": "Reduce procurement uncertainty",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-panel-options",
+      "selector": "[data-section-id=\"home-panel-options\"]",
+      "visibleTitle": "Specification preparation",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-faq",
+      "selector": "[data-section-id=\"home-faq\"]",
+      "visibleTitle": "Objection handling",
+      "sourceFile": "components/home/faq-section.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    },
+    {
+      "sectionId": "home-rfq",
+      "selector": "[data-section-id=\"home-rfq\"]",
+      "visibleTitle": "Qualified inquiry conversion",
+      "sourceFile": "app/page.tsx",
+      "desktopVisible": true,
+      "mobile390Visible": true
+    }
+  ],
+  "componentMounts": [
+    {
+      "componentId": "react-bits:magic-bento",
+      "version": "1.0.0+e0e42",
+      "importPath": "@/lib/products-db",
+      "mountMarker": "<Section sectionId=\"home-product-systems\""
+    },
+    {
+      "componentId": "react-bits:scroll-stack",
+      "version": "1.0.0+009401",
+      "importPath": "@/lib/content/projects",
+      "mountMarker": "data-stack-card"
+    },
+    {
+      "componentId": "original-grouped-faq",
+      "version": "1.0.0+2705",
+      "importPath": "@/components/ui/accordion",
+      "mountMarker": "<Accordion type=\"single\""
+    }
+  ],
+  "v0PromptBinding": {
+    "path": "deliverables/v0-prompt-zharchitecturaldecor.txt",
+    "sha256": "519c116e2f06757dfd2139154bf27cd79fb601f51927e3f633e94ad62c9475ad"
+  },
+  "browserEvidence": {
+    "path": ".codex-delivery/content-browser-session.json",
+    "sha256": "9a3595d8fdabd2f3d6014aaa1aa2b20f5fe070eaf594094f26fb605cf32c9153"
+  }
+}
