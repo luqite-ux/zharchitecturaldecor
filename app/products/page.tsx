@@ -3,8 +3,7 @@ import Link from 'next/link'
 import { PageHero } from '@/components/site/page-hero'
 import { ProductCard } from '@/components/site/product-card'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
-import { productGroups } from '@/lib/content/products'
-import { getPublishedProducts } from '@/lib/products-db'
+import { getProductCatalog } from '@/lib/products-db'
 
 export const revalidate = 60
 
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 export default async function ProductsPage() {
-  const liveProducts = await getPublishedProducts()
+  const { products: liveProducts, groups: liveGroups } = await getProductCatalog()
   return (
     <>
       <PageHero
@@ -27,7 +26,7 @@ export default async function ProductsPage() {
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Products' }]}
       >
         <ul className="flex flex-wrap gap-2" aria-label="Jump to a product group">
-          {productGroups.map((g) => (
+          {liveGroups.map((g) => (
             <li key={g.id}>
               <Link
                 href={`#${g.anchor}`}
@@ -40,7 +39,7 @@ export default async function ProductsPage() {
         </ul>
       </PageHero>
 
-      {productGroups.map((group, gi) => (
+      {liveGroups.map((group, gi) => (
         <Section
           key={group.id}
           sectionId={`products-${group.id}`}

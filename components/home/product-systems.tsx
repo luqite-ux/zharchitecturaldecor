@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
-import { productGroups, getProductsByGroup } from '@/lib/content/products'
+import { getProductCatalog } from '@/lib/products-db'
 import { ProductVisual } from '@/components/site/product-visual'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
-export function ProductSystems() {
+export async function ProductSystems() {
+  const { products, groups } = await getProductCatalog()
   return (
     <Section sectionId="home-product-systems" labelledBy="product-systems-title">
       <div className="container-wide">
@@ -16,8 +17,8 @@ export function ProductSystems() {
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-12">
-          {productGroups.map((group, i) => {
-            const items = getProductsByGroup(group.id)
+          {groups.map((group, i) => {
+            const items = products.filter((product) => product.groupId === group.id)
             const lead = items[0]
             const feature = group.id === 'insulated-decorative-panels'
             return (

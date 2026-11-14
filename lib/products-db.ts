@@ -1,5 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
-import { products as fallbackProducts, type Product } from '@/lib/content/products'
+import {
+  productGroups as fallbackGroups,
+  products as fallbackProducts,
+  type Product,
+  type ProductGroup,
+  type ProductGroupId,
+} from '@/lib/content/products'
 
 function publicClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim()
@@ -7,12 +13,19 @@ function publicClient() {
   return url && key ? createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } }) : null
 }
 
-export async function getPublishedProducts(): Promise<Product[]> {
+export async function getProductCatalog(): Promise<{ products: Product[]; groups: ProductGroup[] }> {
   const client = publicClient()
   const tenantId = process.env.NEXT_PUBLIC_TENANT_ID?.trim()
-  if (!client || !tenantId) return fallbackProducts
-  const { data, error } = await client.from('products').select('slug,name_i18n,description_i18n,image_url,category_slug,extra_data').eq('tenant_id', tenantId).eq('is_active', true).order('sort_order')
-  if (error || !data?.length) return fallbackProducts
+  if (!client || !tenantId) return { products: fallbackProducts, groups: fallbackGroups }
+  const [{ data, error }, { data: categories, error: categoryError }] = await Promise.all([
+    client.from('products').select('slug,name_i18n,description_i18n,image_url,category_slug,extra_data').eq('tenant_id', tenantId).eq('is_active', true).order('sort_order'),
+    client.from('product_categories').select('slug,name_i18n').eq('tenant_id', tenantId).eq('is_active', true).order('sort_order'),
+  ])
+  if (error || categoryError || !data?.length || !categories?.length) return { products: fallbackProducts, groups: fallbackGroups }
+  const groups = fallbackGroups.map((fallback) => {
+    const row = categories.find((category) => category.slug === fallback.id)
+    return row ? { ...fallback, name: row.name_i18n?.en || fallback.name } : fallback
+  })
   const output: Product[] = []
   for (const row of data) {
     const fallback = fallbackProducts.find((item) => item.slug === row.slug)
@@ -21,13 +34,18 @@ export async function getPublishedProducts(): Promise<Product[]> {
     output.push({
       ...fallback,
       name: row.name_i18n?.en || fallback.name,
+      groupId: (groups.some((group) => group.id === row.category_slug) ? row.category_slug : fallback.groupId) as ProductGroupId,
       description: row.description_i18n?.en || fallback.description,
       summary: row.description_i18n?.en || fallback.summary,
       image: row.image_url ? { ...fallback.image, src: row.image_url } : fallback.image,
       gallery: extra?.images?.length ? extra.images.map((src, index) => ({ src, alt: `${row.name_i18n?.en || fallback.name} — image ${index + 1}`, fit: 'contain' as const, background: 'white' as const })) : fallback.gallery,
     })
   }
-  return output.length ? output : fallbackProducts
+  return { products: output.length ? output : fallbackProducts, groups }
+}
+
+export async function getPublishedProducts(): Promise<Product[]> {
+  return (await getProductCatalog()).products
 }
 
 export async function getPublishedProduct(slug: string) {
