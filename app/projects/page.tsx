@@ -49,7 +49,7 @@ export default function ProjectsPage() {
             ))}
           </ul>
           <p className="mt-10 max-w-2xl text-sm text-ink-soft">
-            Images show material families used across our work and are not project photography.
+            Images are extracted from the customer-supplied project brochure and show the named developments.
           </p>
           <Link
             href="/contact"

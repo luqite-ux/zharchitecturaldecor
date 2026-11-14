@@ -113,15 +113,15 @@ export function ProjectsStack() {
                     : undefined
                 }
               >
-                <div className="md:col-span-5">
+                <div className="md:col-span-7">
                   <ProductVisual
                     image={project.image}
                     aspect="aspect-[4/3] md:aspect-auto md:h-full md:min-h-[300px]"
                     tone="bg-transparent"
-                    sizes="(min-width: 768px) 40vw, 100vw"
+                    sizes="(min-width: 768px) 58vw, 100vw"
                   />
                 </div>
-                <div className="flex flex-col justify-between gap-8 p-6 sm:p-8 md:col-span-7">
+                <div className="flex flex-col justify-between gap-8 p-6 sm:p-8 md:col-span-5">
                   <div>
                     <p className="eyebrow">
                       Case {String(i + 1).padStart(2, '0')} / {String(projectCases.length).padStart(2, '0')}
