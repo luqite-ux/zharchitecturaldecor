@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import { SiteHeader } from '@/components/site/site-header'
 import { SiteFooter } from '@/components/site/site-footer'
 import { siteConfig } from '@/lib/site'
+import { cookies } from 'next/headers'
+import { PREVIEW_COOKIE } from '@/lib/site-content/site-content'
 import './globals.css'
 
 const display = Newsreader({
@@ -42,9 +44,10 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const preview = Boolean((await cookies()).get(PREVIEW_COOKIE)?.value)
   const organization = {
     '@context': 'https://schema.org', '@type': 'Organization', '@id': `${siteConfig.url}/#organization`,
     name: 'Anhui Zhenghui Decorative Materials Co., Ltd.', url: siteConfig.url,
@@ -64,11 +67,19 @@ export default function RootLayout({
           Skip to main content
         </a>
         <SiteHeader />
+        {preview ? (
+          <div className="sticky top-0 z-[90] border-b border-terracotta/30 bg-[#fff5ec] px-4 py-2 text-center text-sm text-ink">
+            Content preview is active. Changes are private and not indexed.
+            <form action="/api/site-content/exit-preview" method="post" className="ml-3 inline">
+              <button type="submit" className="font-semibold text-terracotta underline underline-offset-4">Exit preview</button>
+            </form>
+          </div>
+        ) : null}
         <main id="main-content" className="min-h-[60vh]">
           {children}
         </main>
         <SiteFooter />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' && !preview && <Analytics />}
       </body>
     </html>
   )

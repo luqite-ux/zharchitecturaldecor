@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+.site-content-title { font-size: var(--title-mobile, 36px); }
+@media (min-width: 1024px) { .site-content-title { font-size: var(--title-desktop, 54px); } }
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

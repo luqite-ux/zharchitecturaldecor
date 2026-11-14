@@ -13,6 +13,7 @@ export interface HeroSlide {
     focalDesktop: string
   }
   copySide: 'left' | 'right'
+  typography?: { fontFamily?: string; fontWeight?: number; fontSizeDesktop?: number; fontSizeMobile?: number }
 }
 
 export const heroSlides: HeroSlide[] = [

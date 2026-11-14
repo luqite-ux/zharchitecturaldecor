@@ -1,0 +1,31 @@
+{
+  "pages": {
+    "home": {
+      "order": ["hero", "seo"],
+      "modules": {
+        "hero": {
+          "hidden": false,
+          "values": {
+            "slides": [
+              { "id": "surfaces", "role": { "en": "Surfaces" }, "title": { "en": "Shape Distinctive Architectural Surfaces" }, "body": { "en": "Explore architectural decorative elements, insulated decorative panels and custom design objects, grouped by how they are specified." }, "primary_label": { "en": "Explore products" }, "secondary_label": { "en": "Request a quote" } },
+              { "id": "custom-components", "role": { "en": "Custom components" }, "title": { "en": "From Design Intent to Custom Components" }, "body": { "en": "Share drawings and sketches. Our in-house moulding, engraving and 3D printing capability turns them into producible components." }, "primary_label": { "en": "See manufacturing" }, "secondary_label": { "en": "Request a quote" } },
+              { "id": "applications", "role": { "en": "Applications" }, "title": { "en": "Materials for Facades, Interiors and Public Space" }, "body": { "en": "Review how Zhenghui material families are used across residential and public building projects." }, "primary_label": { "en": "View projects" }, "secondary_label": { "en": "Request a quote" } }
+            ]
+          },
+          "styles": {
+            "slides.surfaces.title": { "fontFamily": "site-display", "fontWeight": 400, "fontSizeDesktop": 54, "fontSizeMobile": 36 },
+            "slides.custom-components.title": { "fontFamily": "site-display", "fontWeight": 400, "fontSizeDesktop": 54, "fontSizeMobile": 36 },
+            "slides.applications.title": { "fontFamily": "site-display", "fontWeight": 400, "fontSizeDesktop": 54, "fontSizeMobile": 36 }
+          }
+        },
+        "seo": {
+          "hidden": false,
+          "values": {
+            "title": { "en": "Architectural Decorative Elements and Insulated Panels" },
+            "description": { "en": "Architectural decorative elements, GRC, GRG, EPS mouldings, insulated decorative panels and custom design objects from Anhui Zhenghui." }
+          }
+        }
+      }
+    }
+  }
+}

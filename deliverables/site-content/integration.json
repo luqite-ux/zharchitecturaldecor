@@ -1,0 +1,6 @@
+{
+  "domain": "zharchitecturaldecor.com",
+  "adapterVersion": "1",
+  "capabilities": ["preview"],
+  "modules": ["home.hero", "home.seo"]
+}

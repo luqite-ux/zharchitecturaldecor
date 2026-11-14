@@ -4,12 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowLeft, ArrowRight, Pause, Play } from 'lucide-react'
-import { heroSlides } from '@/lib/content/hero'
+import { heroSlides, type HeroSlide } from '@/lib/content/hero'
 import { cn } from '@/lib/utils'
 
 const SLIDE_SECONDS = 8
 
-export function HeroCarousel() {
+export function HeroCarousel({ slides = heroSlides }: { slides?: HeroSlide[] }) {
   const rootRef = useRef<HTMLDivElement>(null)
   const [index, setIndex] = useState(0)
   const [userPlaying, setUserPlaying] = useState(true)
@@ -78,8 +78,8 @@ export function HeroCarousel() {
   }, [reduced])
 
   const go = useCallback((next: number) => {
-    setIndex((next + heroSlides.length) % heroSlides.length)
-  }, [])
+    setIndex((next + slides.length) % slides.length)
+  }, [slides.length])
 
   const playing = userPlaying && !reduced
   const running = playing && visible
@@ -105,7 +105,7 @@ export function HeroCarousel() {
       }}
     >
       <div className="grid" aria-live={playing ? 'off' : 'polite'}>
-        {heroSlides.map((slide, i) => {
+        {slides.map((slide, i) => {
           const active = i === index
           const side = slide.copySide === 'right' ? 'lg:justify-end' : 'lg:justify-start'
           return (
@@ -177,8 +177,14 @@ export function HeroCarousel() {
                       {String(i + 1).padStart(2, '0')} · {slide.role}
                     </p>
                     <h2
-                      className="mt-3 text-balance text-4xl leading-[1.04] sm:text-5xl lg:text-[3.4rem]"
-                      style={{ ['--i' as string]: 1 }}
+                      className="site-content-title mt-3 text-balance leading-[1.04]"
+                      style={{
+                        ['--i' as string]: 1,
+                        ['--title-mobile' as string]: `${slide.typography?.fontSizeMobile ?? 36}px`,
+                        ['--title-desktop' as string]: `${slide.typography?.fontSizeDesktop ?? 54}px`,
+                        fontFamily: slide.typography?.fontFamily === 'site-sans' ? 'var(--font-body)' : 'var(--font-display)',
+                        fontWeight: slide.typography?.fontWeight ?? 400,
+                      }}
                     >
                       {slide.title}
                     </h2>
@@ -214,7 +220,7 @@ export function HeroCarousel() {
       <div className="relative z-20 border-b border-border bg-ivory/90 backdrop-blur-sm lg:absolute lg:inset-x-0 lg:bottom-0 lg:border-b-0 lg:bg-transparent lg:backdrop-blur-none">
         <div className="container-wide flex items-center gap-4 py-4 lg:rounded-t-2xl lg:bg-ivory/85 lg:backdrop-blur-md">
           <ol className="grid flex-1 grid-cols-3 gap-2 sm:gap-4">
-            {heroSlides.map((slide, i) => (
+            {slides.map((slide, i) => (
               <li key={slide.id}>
                 <button
                   type="button"
