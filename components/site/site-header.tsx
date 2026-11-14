@@ -63,7 +63,7 @@ export function SiteHeader() {
             width={683}
             height={598}
             priority
-            className="h-12 w-auto mix-blend-multiply lg:h-14"
+            className="h-12 w-auto object-contain mix-blend-multiply lg:h-14"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-lg font-medium text-ink">Zhenghui</span>

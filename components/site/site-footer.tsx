@@ -15,7 +15,7 @@ export function SiteFooter() {
               alt=""
               width={683}
               height={598}
-              className="h-20 w-auto mix-blend-multiply sm:h-24"
+              className="h-20 w-auto object-contain mix-blend-multiply sm:h-24"
             />
             <span className="font-serif text-xl text-ink">Zhenghui</span>
           </Link>
