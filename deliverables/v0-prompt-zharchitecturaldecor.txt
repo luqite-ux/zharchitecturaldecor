@@ -1,0 +1,40 @@
+Build a complete English-first B2B website design for Anhui Zhenghui Decorative Materials Co., Ltd. Formal domain: https://zharchitecturaldecor.com. Contact email: info@zharchitecturaldecor.com. The site must be locale-ready even though the initial public language is English.
+
+Preserve this owner direction verbatim: “网站设计风格参考 https://openai.com/index/gpt-6-astra/ ，但是不要黑色调的。在制作时要灵活采用 three.js脚本，不要弄那种死气沉沉的css出来。”
+
+Interpretation guardrails: create a light, warm architectural editorial system inspired by the reference's spatial storytelling and polished interactive pacing, but do not copy its branding, assets or text. Avoid black-dominant UI. Use an ivory/mineral-white base, precise typography, restrained warm stone and terracotta accents, and deep readable text. Three.js must carry meaning: use it for an accessible exploded insulated-panel cross-section with finish, calcium-silicate structural layer and selectable insulation core. Do not use generic particle clouds. Provide mobile, reduced-motion and no-WebGL fallbacks.
+
+Use every attached required banner image in the homepage carousel. Do not choose one and discard the others. Keep headlines and buttons as real HTML. The three slides must have different procurement roles:
+1. “Shape Distinctive Architectural Surfaces” → `/products`
+2. “From Design Intent to Custom Components” → `/manufacturing`
+3. “Materials for Facades, Interiors and Public Space” → `/projects`
+Each needs its own composition and mobile-safe focal crop. Do not solve readability with a full-image grey/black overlay.
+
+Required top navigation: Home, Products, Projects, Manufacturing, About Us, News, Contact. Home must be explicit and the logo must also link home. Build complete pages and routes, including product listing and all nine product detail routes, project listing, manufacturing, about, news list/detail empty-state architecture, and contact/RFQ.
+
+Product groups and routes:
+- Architectural Decorative Elements: EPS Decorative Mouldings; GRC Architectural Decorative Elements; GRG Interior Decorative Elements.
+- Insulated Decorative Panels: Real-Stone Finish; Stone-Effect Finish; Water-in-Sand Finish; Natural Ultrathin Stone.
+- Custom Design Objects: Cement-Texture Design Objects; UHPC Custom Components.
+
+Homepage sequence, each with a stable `data-section-id`: `home-hero`, `home-product-systems`, `home-material-explorer`, `home-applications`, `home-manufacturing`, `home-projects`, `home-delivery-process`, `home-panel-options`, `home-faq`, `home-rfq`.
+
+Verified company facts only: founded in 2018; approximately 25,600 m² site and 18,000 m² factory. Verified equipment includes 2 air compressors, 4 mixers, 5 spraying machines, 4 cutting machines, 2 mesh laminating machines, 9 mortar coating machines, 3 engraving machines and 2 3D printers. Verified monthly capacity: GRC/UHPC 12,000 m²; GRG 5,000 m²; EPS 20,000 m; homogeneous/ceramic board lines 80,000 m. Present these as source-backed current facts without adding rankings, certifications, export countries or automation claims.
+
+The insulated-panel technical selector may show four verified finish families and six verified core variants: EPS, HEPS, XPS, PU, rock wool and composite insulation board; calcium-silicate board is the structural layer. Source indicates fire class B1 for EPS/HEPS/XPS/PU and A1 for rock wool/composite. Do not invent thermal conductivity, thickness, price, stock, certification or test values.
+
+Show all eight verified project cases as separate items: 沭阳·智慧佳园项目, 盱眙·圣海天鹅湖项目, 六合·翠湖美墅项目, 溧水·屏溪佳苑项目, 溧水·万科城项目, 南京·紫金华府项目, 荣盛鹭岛荣府项目, 南京南湾营二、三期经济适用房项目. Use attached/mapped customer images, but do not invent project scope, year, client, quantity or testimonial.
+
+The customer source contains only a business licence, used internally to verify identity. Do not publish the licence image or sensitive fields. Do not create a fake certificate gallery. Provide a maintainable future certificate-record layout only if needed, with no placeholder certificates.
+
+Never use warranty, warranties, guarantee, guaranteed, 质保 or 保修. Do not use the old brochure company name 南京爱博特装饰工程有限公司, its phone, URL or corporate introduction. Do not publish internal source names, audit notes, attachment counts or evidence language.
+
+Use real customer images with semantic placement. Product subject images must use contain or an equivalent full-subject treatment with coordinated clean backgrounds; no dark dirty gradients, visible patchwork, clipping or hover crop. Image-and-text modules must feel integrated without white picture-frame separation.
+
+Homepage motion requirements: meaningful hero depth; lazy Three.js material explorer; Scroll Stack behavior for projects on desktop with normal vertical cards on touch/mobile; restrained bento/FAQ feedback. Every major section must animate when it actually enters the viewport. Do not use a 15-second or global timeout that prematurely marks unseen sections complete. Pause off-screen rendering and support `prefers-reduced-motion`.
+
+The RFQ/contact form must visually include name, email, phone, company, product interest, project location, dimensions/specifications, quantity, drawing/file note, subject and message. Include a clear four-character image CAPTCHA field and refresh control. Each form instance must expose a stable unique `captchaScope`. v0 only designs the frontend; do not simulate submission with alerts or timeouts and do not invent backend credentials.
+
+News must not contain fake articles. Design a useful empty state and the dynamic list/detail structure for later backend content. No price, warranty, fake reviews, fake partners, fake certificates, unsupported compliance claims or unsupported superlatives. Footer copyright: `© {current year} Anhui Zhenghui Decorative Materials Co., Ltd. All rights reserved.` with normalized punctuation.
+
+Implement a polished responsive design at desktop and 390px. Ensure WCAG AA contrast, visible focus, semantic headings, one main h1 per page, keyboard/touch usability, no horizontal overflow, and clear empty/error/loading states. Keep components data-driven so the engineering stage can replace static content with Supabase without redesigning the visual system.

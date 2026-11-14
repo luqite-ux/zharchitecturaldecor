@@ -1,0 +1,20 @@
+{
+  "context": {
+    "projectId": "project-1adb224a-7113-44cd-9fcd-9713fcca5ab3",
+    "runId": "run-b7630e6e-4ffc-408c-9cd1-063b753b72b0",
+    "purpose": "build"
+  },
+  "localRequestId": "failed-57e353c1-ffd4-4f84-8797-1153a7bcc957",
+  "request": {
+    "match": "fuzzy",
+    "sort": "relevance",
+    "limit": "5",
+    "query": "GRC GRG EPS architectural decorative elements insulated facade panels",
+    "industry": "Architectural Decorative Materials Manufacturing"
+  },
+  "at": "2026-11-14T09:57:59.432Z",
+  "status": 0,
+  "response": {
+    "error": "NETWORK_UNAVAILABLE"
+  }
+}

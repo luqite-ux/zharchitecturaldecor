@@ -1,0 +1,8 @@
+Reviewed 2026-11-14T18:16:00+08:00
+Domain: armosprokat.gr
+Home: The company presents architectural precast capability through material categories, project imagery and collaboration with design professionals.
+Navigation: Architecture is a distinct product/application domain, with a route from corporate capability to material solutions and projects.
+Products: GRC and UHPC are framed as design-enabling materials rather than commodity cards. The reusable pattern is to pair material properties, customization and built examples.
+Adopt: architect-facing language, material/application pairing, project proof.
+Reject: copying project facts, technical values, certifications, imagery, company history or visual identity.
+Source pages reviewed: https://www.armosprokat.gr/en/ and https://www.armosprokat.gr/en/product_category/architecture/.

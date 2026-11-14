@@ -1,0 +1,8 @@
+Reviewed 2026-11-14T18:14:00+08:00
+Domain: nexthermo.ro
+Home: The page quickly explains insulated facade-panel value, finish choices and the path to a quotation. It treats the wall system as a decision problem rather than a decorative gallery alone.
+Navigation: The information architecture makes products, benefits, technical information and contact/quotation routes easy to distinguish.
+Products: Finish and insulation-core options are presented as a configurable system. The reusable idea is a visual selector tied to real technical facts; Zhenghui will map this to its verified four finishes and six core options without inventing performance values.
+Adopt: finish/core selector logic, technical comparison, quote-readiness cues.
+Reject: copying commercial claims, prices, performance values, imagery or local-market assertions.
+Source pages reviewed: https://nexthermo.ro/en/ and public same-domain navigation/product pages reached from that page.

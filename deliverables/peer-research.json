@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "customerIndustry": "Architectural decorative materials and insulated facade systems",
+  "products": ["EPS decorative mouldings", "GRC elements", "GRG elements", "insulated decorative panels", "cement-texture objects", "UHPC custom components"],
+  "targetBuyers": ["architects", "facade consultants", "general contractors", "developers", "distributors"],
+  "peers": [
+    {
+      "url": "https://prekron.com/en/", "source": "web", "normalizedDomain": "prekron.com",
+      "pagesReviewed": [
+        {"kind":"home","url":"https://prekron.com/en/","observation":"System-led homepage combining material technologies, applications and delivery process.","checkedAt":"2026-11-14T18:12:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/prekron-review.txt","sha256":"e0b0d6b6938bf05950d9924bdcd9bd0f2b936ce399ee631b012dea474d5413b1"}},
+        {"kind":"navigation","url":"https://prekron.com/en/","observation":"Navigation separates technologies, projects and company proof.","checkedAt":"2026-11-14T18:12:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/prekron-review.txt","sha256":"e0b0d6b6938bf05950d9924bdcd9bd0f2b936ce399ee631b012dea474d5413b1"}},
+        {"kind":"products","url":"https://prekron.com/en/","observation":"Products are presented as systems with an execution path, not isolated cards.","checkedAt":"2026-11-14T18:12:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/prekron-review.txt","sha256":"e0b0d6b6938bf05950d9924bdcd9bd0f2b936ce399ee631b012dea474d5413b1"}}
+      ],
+      "overseasEvidence":{"country":"Serbia","whyCompetitor":"Overseas architectural-material producer addressing design and construction buyers.","sourceUrl":"https://prekron.com/en/"},
+      "homeSections":["material systems","applications","project delivery"], "navigation":["technologies","projects","company"], "productTaxonomy":["facade systems","architectural elements"],
+      "adopt":["system-led product taxonomy","project delivery narrative"], "reject":["all peer imagery and unsupported claims"],
+      "evidence":[{"url":"https://prekron.com/en/","observation":"Material-system and project-process structure is relevant to specification buyers."}]
+    },
+    {
+      "url": "https://nexthermo.ro/en/", "source": "web", "normalizedDomain": "nexthermo.ro",
+      "pagesReviewed": [
+        {"kind":"home","url":"https://nexthermo.ro/en/","observation":"Homepage explains insulated panels through buyer choices and quote readiness.","checkedAt":"2026-11-14T18:14:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/nexthermo-review.txt","sha256":"2fd571544502896066723a9b19dc9ffba6df175e94b9cea24331231d5f2674f8"}},
+        {"kind":"navigation","url":"https://nexthermo.ro/en/","observation":"Products, benefits, technical information and quotation paths are distinct.","checkedAt":"2026-11-14T18:14:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/nexthermo-review.txt","sha256":"2fd571544502896066723a9b19dc9ffba6df175e94b9cea24331231d5f2674f8"}},
+        {"kind":"products","url":"https://nexthermo.ro/en/","observation":"Finish and insulation-core choices are communicated as a configurable system.","checkedAt":"2026-11-14T18:14:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/nexthermo-review.txt","sha256":"2fd571544502896066723a9b19dc9ffba6df175e94b9cea24331231d5f2674f8"}}
+      ],
+      "overseasEvidence":{"country":"Romania","whyCompetitor":"Overseas insulated decorative facade-panel supplier serving construction procurement.","sourceUrl":"https://nexthermo.ro/en/"},
+      "homeSections":["panel value","finish selection","technical system"], "navigation":["products","technical information","contact"], "productTaxonomy":["finish families","insulation cores"],
+      "adopt":["finish/core decision support","technical comparison"], "reject":["peer prices, performance values and local claims"],
+      "evidence":[{"url":"https://nexthermo.ro/en/","observation":"The finish/core selector concept maps well to Zhenghui verified source tables."}]
+    },
+    {
+      "url": "https://www.armosprokat.gr/en/", "source": "web", "normalizedDomain": "armosprokat.gr",
+      "pagesReviewed": [
+        {"kind":"home","url":"https://www.armosprokat.gr/en/","observation":"Corporate capability is established through material categories and projects.","checkedAt":"2026-11-14T18:16:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/armos-review.txt","sha256":"271f1bdd4dd28c93c2f02cdb17e82b92fc5c30e21efeb7eb8e15ad8794b8972d"}},
+        {"kind":"navigation","url":"https://www.armosprokat.gr/en/","observation":"Architecture has a clear route from capability to material solutions and projects.","checkedAt":"2026-11-14T18:16:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/armos-review.txt","sha256":"271f1bdd4dd28c93c2f02cdb17e82b92fc5c30e21efeb7eb8e15ad8794b8972d"}},
+        {"kind":"products","url":"https://www.armosprokat.gr/en/product_category/architecture/","observation":"GRC and UHPC are framed as architect-facing design materials.","checkedAt":"2026-11-14T18:16:00+08:00","evidence":{"path":"deliverables/blueprint-evidence/armos-review.txt","sha256":"271f1bdd4dd28c93c2f02cdb17e82b92fc5c30e21efeb7eb8e15ad8794b8972d"}}
+      ],
+      "overseasEvidence":{"country":"Greece","whyCompetitor":"Overseas architectural precast supplier presenting GRC/UHPC to architects and contractors.","sourceUrl":"https://www.armosprokat.gr/en/product_category/architecture/"},
+      "homeSections":["architectural materials","custom capability","projects"], "navigation":["architecture","products","projects"], "productTaxonomy":["GRC","UHPC"],
+      "adopt":["material/application pairing","architect-facing customization story"], "reject":["peer project facts and certifications"],
+      "evidence":[{"url":"https://www.armosprokat.gr/en/product_category/architecture/","observation":"Material-led architectural presentation is applicable to Zhenghui GRC and UHPC."}]
+    }
+  ],
+  "caseIntake": []
+}

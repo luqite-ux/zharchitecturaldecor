@@ -1,0 +1,39 @@
+{
+  "context": {
+    "projectId": "project-1adb224a-7113-44cd-9fcd-9713fcca5ab3",
+    "runId": "run-b7630e6e-4ffc-408c-9cd1-063b753b72b0",
+    "purpose": "build"
+  },
+  "scope": "current-run-only",
+  "otherRunIds": [],
+  "checkedAt": "2026-11-14T10:11:27.441Z",
+  "complete": false,
+  "issues": [
+    "QUERY_FAILED",
+    "ADOPTION_UNRECORDED",
+    "DELIVERY_UNRECORDED"
+  ],
+  "pending": 0,
+  "failedQueryCount": 1,
+  "queries": [
+    {
+      "receiptPath": "D:\\Cursor\\Grand\\dulizhan\\zharchitecturaldecor\\deliverables\\case-query-failed-57e353c1-ffd4-4f84-8797-1153a7bcc957.json",
+      "requestId": "failed-57e353c1-ffd4-4f84-8797-1153a7bcc957",
+      "request": {
+        "match": "fuzzy",
+        "sort": "relevance",
+        "limit": "5",
+        "query": "GRC GRG EPS architectural decorative elements insulated facade panels",
+        "industry": "Architectural Decorative Materials Manufacturing"
+      },
+      "status": 0,
+      "decision": "missing",
+      "decisionSent": false,
+      "caseSlugs": [],
+      "reason": "",
+      "externalReferences": []
+    }
+  ],
+  "deliveries": [],
+  "note": "Current run only; other runs are not certified. Adoption is agent-reported, not Owner acceptance or proven design improvement."
+}

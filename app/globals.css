@@ -1,0 +1,233 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --header-h: 4rem;
+
+  --background: #f7f3ec;
+  --foreground: #1c2536;
+  --card: #fcfbf8;
+  --card-foreground: #1c2536;
+  --popover: #fcfbf8;
+  --popover-foreground: #1c2536;
+  --primary: #a64a27;
+  --primary-foreground: #ffffff;
+  --secondary: #ece5d8;
+  --secondary-foreground: #1c2536;
+  --muted: #efe9de;
+  --muted-foreground: #5c554c;
+  --accent: #e7dfd0;
+  --accent-foreground: #1c2536;
+  --destructive: #a32222;
+  --destructive-foreground: #ffffff;
+  --border: #d9cfbd;
+  --input: #c9bda6;
+  --ring: #a64a27;
+  --chart-1: #a64a27;
+  --chart-2: #b9a98f;
+  --chart-3: #1c2a44;
+  --chart-4: #8a6d3b;
+  --chart-5: #6d7b8f;
+  --radius: 0.75rem;
+
+  --ivory: #f7f3ec;
+  --mineral: #fcfbf8;
+  --stone: #e7dfd2;
+  --stone-deep: #b9a98f;
+  --ink: #1c2536;
+  --ink-soft: #5c554c;
+  --terracotta: #a64a27;
+  --terracotta-soft: #f0d9cc;
+  --navy: #1c2a44;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), 'Hanken Grotesk', system-ui, sans-serif;
+  --font-serif: var(--font-display), 'Newsreader', Georgia, serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ivory: var(--ivory);
+  --color-mineral: var(--mineral);
+  --color-stone: var(--stone);
+  --color-stone-deep: var(--stone-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-soft: var(--terracotta-soft);
+  --color-navy: var(--navy);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--terracotta);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  @media (min-width: 1024px) {
+    :root {
+      --header-h: 4.5rem;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold tracking-[0.18em] uppercase text-terracotta;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-10;
+  }
+  .surface-image {
+    mix-blend-mode: multiply;
+  }
+}
+
+/* Scroll-triggered reveal: items stay visible until a section is armed after hydration. */
+.reveal-item {
+  transition:
+    opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+[data-section-id][data-armed='true']:not([data-inview='true']) .reveal-item {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+
+/* Hero slide choreography */
+.hero-img {
+  object-position: var(--focal-m, 50% 50%);
+}
+@media (min-width: 640px) {
+  .hero-img {
+    object-position: var(--focal-t, var(--focal-m, 50% 50%));
+  }
+}
+@media (min-width: 1280px) {
+  .hero-img {
+    object-position: var(--focal-d, 50% 50%);
+  }
+}
+
+.hero-slide[data-active='true'] .hero-img-wrap {
+  animation: hero-settle 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-slide[data-active='true'] .hero-copy > * {
+  animation: hero-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 90ms + 150ms);
+}
+@keyframes hero-settle {
+  from {
+    transform: scale(1.07);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes hero-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes explorer-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hero-progress-bar {
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+.hero-progress-bar[data-running='true'] {
+  animation: hero-progress var(--hero-duration, 8s) linear forwards;
+}
+.hero-progress-bar[data-running='paused'] {
+  animation: hero-progress var(--hero-duration, 8s) linear forwards;
+  animation-play-state: paused;
+}
+.hero-progress-bar[data-done='true'] {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-item,
+  [data-section-id][data-armed='true']:not([data-inview='true']) .reveal-item {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .hero-slide[data-active='true'] .hero-img-wrap,
+  .hero-slide[data-active='true'] .hero-copy > * {
+    animation: none;
+  }
+  .hero-progress-bar[data-running] {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

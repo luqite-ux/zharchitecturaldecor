@@ -1,0 +1,8 @@
+Reviewed 2026-11-14T18:12:00+08:00
+Domain: prekron.com
+Home: The page leads with material-system positioning, then moves through technologies, applications and an explicit project-delivery sequence. The structure helps an architect or contractor understand both product scope and execution capability.
+Navigation: The menu separates products/material technologies, projects and company information instead of flattening everything into one catalogue page.
+Products: Product communication is system-led and specification-aware. The reusable pattern is a clear path from material family to technical fit and project process; Zhenghui must use only its own verified products, equipment and case evidence.
+Adopt: system taxonomy, project-process narrative, technical confidence.
+Reject: copying imagery, copywriting, certifications, numerical claims or brand styling.
+Source pages reviewed: https://prekron.com/en/ and public same-domain navigation/product pages reached from that page.

@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.vercel/
+.playwright-cli/
+output/
+.codex-delivery/
+tools/
+Thumbs.db
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

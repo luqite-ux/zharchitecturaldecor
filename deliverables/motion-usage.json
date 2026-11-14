@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "queries": [
+    {
+      "query": "architectural scroll",
+      "at": "2026-11-14T10:07:07.852Z",
+      "catalogHash": "2d190f64d6275820fc8fb818f19c0f360155d8f4545790b900628e67c200afdd",
+      "ids": []
+    },
+    {
+      "query": "material reveal",
+      "at": "2026-11-14T10:07:07.902Z",
+      "catalogHash": "2d190f64d6275820fc8fb818f19c0f360155d8f4545790b900628e67c200afdd",
+      "ids": []
+    }
+  ],
+  "decision": "undecided",
+  "items": []
+}

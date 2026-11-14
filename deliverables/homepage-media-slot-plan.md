@@ -1,0 +1,18 @@
+# Homepage media and buyer-path plan
+
+Video is disabled by default. All public media must come from the customer source ledger; the old 南京爱博特 company identity, phone and URL are excluded.
+
+| Module | Buyer question | Verified fact/source | Media decision | Information task | Interaction/route | Desktop / 390px |
+|---|---|---|---|---|---|---|
+| Hero | What can this supplier make? | Nine product families; three customer banner images | Use all three supplied banners with source-specific crops; no video | Distinguish architectural expression, customization and projects | `/products`, `/manufacturing`, `/projects` | Editorial split and depth on desktop; dedicated safe crop and stacked copy on mobile |
+| Product systems | Which material family fits my task? | Excel product rows and product image folders | Representative real images for elements, panels and custom objects | Map nine products into three systems | Real category/product slugs | Bento grid desktop; full-subject stacked cards mobile |
+| Material explorer | What is inside an insulated decorative panel? | Brochure pages 23–26 | No invented image; build semantic Three.js layers from verified table | Explain finish, calcium-silicate layer and six core choices | Accessible finish/core controls | Interactive exploded cutaway desktop; static layered fallback mobile/reduced motion |
+| Applications | Where can these materials be used? | Product facts and mapped cases | Real project/product detail crops plus consistent line icons | Connect products to facade/interior/landscape/renovation tasks | Relevant product and project routes | Four-panel matrix desktop; compact icon grid mobile |
+| Manufacturing | Can the supplier handle my project? | 25,600 m² site, 18,000 m² factory, verified equipment/capacity | Facility and equipment images from Excel/folders | Provide evidence of scale and production mix | `/manufacturing` | Panorama plus metrics desktop; image-first sequence mobile |
+| Projects | Is there relevant execution experience? | Eight named cases mapped to brochure pages | Use each mapped project image independently | Show project and location without inventing scope | `/projects` and project detail anchors | Scroll Stack desktop; ordinary vertical cards mobile |
+| Delivery process | How does a custom order progress? | Verified workflow and installation sequence | Semantic line icons; no unrelated stock imagery | Reduce ambiguity from requirement to installation coordination | `/contact#rfq` | Horizontal sequence desktop; vertical timeline mobile |
+| Panel options | Which finish and core options exist? | Four finishes and six model/core variants from brochure tables | Finish samples and clean diagrams only | Support early specification without unsupported performance claims | `/products?category=insulated-panels` | Tabs/table desktop; select/spec cards mobile |
+| FAQ | What should I confirm before inquiry? | Filtered workbook FAQ | No media needed; simple graphic topic markers | Answer customization, samples and input questions; exclude warranty | Expandable grouped FAQ | Two-column groups desktop; single column mobile |
+| RFQ | What should I send? | Product/customization scope | Optional small facility/product detail, no decorative filler | Collect product, dimensions, drawings, quantity and message | `/contact`, unique CAPTCHA scope | Checklist beside form desktop; checklist then form mobile |
+
+Certificates: the source contains only a business licence. It is identity evidence with sensitive fields and is not a public product certificate. No certificate gallery will be fabricated; future verified product certificates can be published as individual records through the backend.
