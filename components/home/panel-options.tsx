@@ -20,7 +20,7 @@ export function PanelOptions() {
           id="panel-options-title"
           eyebrow="Panel options"
           title="Build the panel around your project"
-          lead={`Select one of four surface finishes and one of six insulation cores. A ${structuralLayer.label.toLowerCase()} board forms the structural layer between them.`}
+          lead={`Select one of four surface finishes and one of six insulation cores. A ${structuralLayer.label.toLowerCase()} forms the structural layer between them.`}
         />
 
         <h3 className="mt-12 text-xl font-semibold text-ink">1. Select a surface finish</h3>
