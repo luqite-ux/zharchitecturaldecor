@@ -6,10 +6,10 @@ import { ProductVisual } from '@/components/site/product-visual'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
 const finishSlugs = [
-  'real-stone-finish',
-  'stone-effect-finish',
-  'water-in-sand-finish',
-  'natural-ultrathin-stone',
+  'real-stone-insulated-panel',
+  'stone-effect-insulated-panel',
+  'water-in-sand-insulated-panel',
+  'ultrathin-stone-insulated-panel',
 ] as const
 
 export function PanelOptions() {
