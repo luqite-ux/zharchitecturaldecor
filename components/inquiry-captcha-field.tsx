@@ -78,7 +78,7 @@ export function InquiryCaptchaField({
               height={56}
             />
           ) : (
-            <span className="px-2 text-center text-xs text-slate-500">{loading ? '正在加载…' : '加载失败'}</span>
+            <span className="px-2 text-center text-xs text-slate-500">{loading ? 'Loading…' : 'Load failed'}</span>
           )}
         </div>
         <input type="hidden" name={scopeName} value={scope} />
