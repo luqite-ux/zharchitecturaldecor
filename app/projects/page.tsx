@@ -39,10 +39,7 @@ export default function ProjectsPage() {
                   />
                   <div className="flex flex-1 flex-col gap-2 p-6">
                     <span className="eyebrow">Case {String(i + 1).padStart(2, '0')}</span>
-                    <h3 lang="zh-Hans" className="text-xl text-ink">
-                      {p.nameZh}
-                    </h3>
-                    <p className="text-sm text-ink-soft">{p.nameEn}</p>
+                    <h3 className="text-xl text-ink">{p.nameEn}</h3>
                   </div>
                 </article>
               </Reveal>

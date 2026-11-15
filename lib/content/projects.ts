@@ -19,7 +19,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Shuyang · Zhihui Jiayuan Project',
     place: 'Shuyang',
     image: {
-      src: '/images/projects/shuyang-zhihui-jiayuan.jpg',
+      src: '/images/projects-enhanced/shuyang-zhihui-jiayuan.jpg',
       alt: 'Residential buildings at Shuyang Zhihui Jiayuan',
       fit: 'cover',
       background: 'photo',
@@ -31,7 +31,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Xuyi · Shenghai Swan Lake Project',
     place: 'Xuyi',
     image: {
-      src: '/images/projects/xuyi-shenghai-swan-lake.jpg',
+      src: '/images/projects-enhanced/xuyi-shenghai-swan-lake.jpg',
       alt: 'Villa facade at Xuyi Shenghai Swan Lake',
       fit: 'cover',
       background: 'photo',
@@ -43,7 +43,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Luhe · Cuihu Meishu Project',
     place: 'Luhe',
     image: {
-      src: '/images/projects/luhe-cuihu-meishu.jpg',
+      src: '/images/projects-enhanced/luhe-cuihu-meishu.jpg',
       alt: 'Residential facade at Luhe Cuihu Meishu',
       fit: 'cover',
       background: 'photo',
@@ -55,7 +55,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Lishui · Pingxi Jiayuan Project',
     place: 'Lishui',
     image: {
-      src: '/images/projects/lishui-pingxi-jiayuan.jpg',
+      src: '/images/projects-enhanced/lishui-pingxi-jiayuan.jpg',
       alt: 'Residential towers at Lishui Pingxi Jiayuan',
       fit: 'cover',
       background: 'photo',
@@ -67,7 +67,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Lishui · Vanke City Project',
     place: 'Lishui',
     image: {
-      src: '/images/projects/lishui-vanke-city.jpg',
+      src: '/images/projects-enhanced/lishui-vanke-city.jpg',
       alt: 'Residential towers at Lishui Vanke City',
       fit: 'cover',
       focal: '78% 50%',
@@ -80,7 +80,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Nanjing · Zijin Huafu Project',
     place: 'Nanjing',
     image: {
-      src: '/images/projects/nanjing-zijin-huafu.jpg',
+      src: '/images/projects-enhanced/nanjing-zijin-huafu.jpg',
       alt: 'Architectural facade at Nanjing Zijin Huafu',
       fit: 'cover',
       focal: '40% 55%',
@@ -92,7 +92,7 @@ export const projectCases: ProjectCase[] = [
     nameZh: '荣盛鹭岛荣府项目',
     nameEn: 'Rongsheng Ludao Rongfu Project',
     image: {
-      src: '/images/projects/rongsheng-ludao-rongfu.jpg',
+      src: '/images/projects-enhanced/rongsheng-ludao-rongfu.jpg',
       alt: 'Main entrance at Rongsheng Ludao Rongfu',
       fit: 'cover',
       focal: '82% 50%',
@@ -105,7 +105,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Nanjing Nanwanying Phases II and III Affordable Housing Project',
     place: 'Nanjing',
     image: {
-      src: '/images/projects/nanjing-nanwanying-phase-2-3.jpg',
+      src: '/images/projects-enhanced/nanjing-nanwanying-phase-2-3.jpg',
       alt: 'Residential facade at Nanjing Nanwanying phases two and three',
       fit: 'cover',
       background: 'photo',

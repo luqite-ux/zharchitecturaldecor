@@ -11,9 +11,9 @@ const applications = [
     href: '/products/grc-architectural-elements',
     cta: 'GRC architectural elements',
     image: {
-      src: '/images/projects/nanjing-zijin-huafu.jpg',
-      alt: 'Real residential facade from the Nanjing Zijin Huafu project',
-      focal: '50% 50%',
+      src: '/images/applications/grc-facade.jpg',
+      alt: 'Completed residential facade with GRC window surrounds and cornices',
+      focal: '50% 44%',
     },
   },
   {
@@ -23,21 +23,21 @@ const applications = [
     href: '/products/grg-interior-elements',
     cta: 'GRG interior elements',
     image: {
-      src: '/images/products/grg-ornamental-pedestals.jpg',
+      src: '/images/applications/grg-interior-elements.jpg',
       alt: 'Row of cream ornamental pedestals with relief scrollwork',
       focal: '50% 55%',
     },
   },
   {
-    id: 'public-space',
-    title: 'Public space',
-    body: 'UHPC and custom components developed from design intent for plazas, entrances and civic buildings.',
-    href: '/products/uhpc-custom-components',
-    cta: 'UHPC custom components',
+    id: 'custom-objects',
+    title: 'Custom objects',
+    body: 'Cement-texture objects developed from sketches and design intent for interiors, displays and bespoke applications.',
+    href: '/products/cement-texture-design-objects',
+    cta: 'Cement-texture design objects',
     image: {
-      src: '/images/projects/rongsheng-ludao-rongfu.jpg',
-      alt: 'Real entrance building from the Rongsheng Ludao Rongfu project',
-      focal: '50% 50%',
+      src: '/images/applications/cement-texture-object.jpg',
+      alt: 'Customer-supplied cement-texture puffer jacket design object',
+      focal: '50% 54%',
     },
   },
 ]
@@ -49,7 +49,7 @@ export function Applications() {
         <SectionHeading
           id="applications-title"
           eyebrow="Applications"
-          title="Materials for facades, interiors and public space"
+          title="Materials for facades, interiors and custom objects"
           lead="Choose by where the material will sit. Each route leads to the product family best suited to that setting."
         />
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
