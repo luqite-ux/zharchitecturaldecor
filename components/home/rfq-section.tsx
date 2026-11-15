@@ -15,7 +15,7 @@ export function RfqSection() {
   return (
     <Section sectionId="home-rfq" labelledBy="rfq-title" className="bg-secondary/60">
       <div className="container-wide grid gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-5">
+        <div className="self-start lg:sticky lg:top-28 lg:col-span-5">
           <SectionHeading
             id="rfq-title"
             eyebrow="Request a quotation"

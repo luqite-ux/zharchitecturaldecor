@@ -16,24 +16,23 @@ export async function ProductSystems() {
           lead="Start from a moulding, a finished insulated panel or a fully custom object. Each system is specified against your drawings and project conditions."
         />
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-12">
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {groups.map((group, i) => {
             const items = products.filter((product) => product.groupId === group.id)
             const lead = items[0]
-            const feature = group.id === 'insulated-decorative-panels'
             return (
               <Reveal
                 key={group.id}
                 index={i}
                 as="article"
-                className={feature ? 'lg:col-span-6 lg:row-span-2' : 'lg:col-span-6'}
+                className="h-full"
               >
                 <div className="group/card flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-mineral transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-stone-deep hover:shadow-[0_24px_48px_-28px_rgba(28,37,54,0.35)] motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                   <ProductVisual
                     image={lead.image}
-                    aspect={feature ? 'aspect-[4/3]' : 'aspect-[16/8]'}
+                    aspect="aspect-[4/3]"
                     tone="bg-transparent"
-                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
                   <div className="flex flex-1 flex-col p-6 sm:p-8">
                     <h3 className="text-2xl sm:text-3xl">{group.name}</h3>

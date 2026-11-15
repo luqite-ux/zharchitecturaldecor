@@ -36,8 +36,8 @@ const applications = [
     cta: 'Cement-texture design objects',
     image: {
       src: '/images/applications/cement-texture-object.jpg',
-      alt: 'Customer-supplied cement-texture puffer jacket design object',
-      focal: '50% 54%',
+      alt: 'Customer-supplied collection of cement-texture design objects',
+      focal: '50% 70%',
     },
   },
 ]

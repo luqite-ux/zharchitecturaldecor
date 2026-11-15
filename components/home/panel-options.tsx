@@ -19,11 +19,12 @@ export function PanelOptions() {
         <SectionHeading
           id="panel-options-title"
           eyebrow="Panel options"
-          title="Four finishes, six insulation cores"
-          lead={`Every insulated decorative panel pairs a finish with a ${structuralLayer.label.toLowerCase()} structural layer and the insulation core you select.`}
+          title="Build the panel around your project"
+          lead={`Select one of four surface finishes and one of six insulation cores. A ${structuralLayer.label.toLowerCase()} board forms the structural layer between them.`}
         />
 
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <h3 className="mt-12 text-xl font-semibold text-ink">1. Select a surface finish</h3>
+        <ul className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {finishSlugs.map((slug, i) => {
             const product = getProduct(slug)
             if (!product) return null
@@ -44,14 +45,15 @@ export function PanelOptions() {
           })}
         </ul>
 
-        <Reveal index={2} className="mt-8">
+        <Reveal index={2} className="mt-10">
+          <h3 className="mb-5 text-xl font-semibold text-ink">2. Select an insulation core</h3>
           <div className="overflow-hidden rounded-3xl border border-border bg-mineral">
             <table className="w-full text-left text-sm">
-              <caption className="sr-only">Insulation core options and indicated fire class</caption>
+              <caption className="sr-only">Available insulation core options and material fire classifications indicated in the supplied product information</caption>
               <thead className="bg-ivory text-xs uppercase tracking-wider text-ink-soft">
                 <tr>
                   <th scope="col" className="px-5 py-3 font-semibold">Insulation core</th>
-                  <th scope="col" className="px-5 py-3 font-semibold">Indicated fire class</th>
+                  <th scope="col" className="px-5 py-3 font-semibold">Material fire classification</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
@@ -75,7 +77,7 @@ export function PanelOptions() {
             </table>
           </div>
           <p className="mt-3 text-xs text-ink-soft">
-            Thickness, thermal values and project-specific compliance are confirmed with our team per project.
+            Classifications shown are material options indicated in the supplied product information. Final panel composition, thickness, thermal values and project compliance must be confirmed for each order.
           </p>
         </Reveal>
       </div>
