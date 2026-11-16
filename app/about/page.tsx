@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHero } from '@/components/site/page-hero'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
-import { companyFacts } from '@/lib/content/company'
+import { companyFacts, equipment } from '@/lib/content/company'
 import { productGroups } from '@/lib/content/products'
 import { siteConfig } from '@/lib/site'
 
@@ -27,8 +27,8 @@ export default function AboutPage() {
       />
 
       <Section sectionId="about-facts" labelledBy="about-facts-title" className="!pt-0">
-        <div className="container-wide grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-6">
+        <div className="container-wide grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
             <h2 id="about-facts-title" className="text-3xl sm:text-4xl">
               What we do
             </h2>
@@ -37,10 +37,38 @@ export default function AboutPage() {
               {fmt.format(companyFacts.factoryArea.value)} m² factory. Mouldings, finished panels and custom
               components are developed from your drawings and produced on our own lines.
             </p>
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-7 border-y border-border py-7 sm:grid-cols-3 lg:grid-cols-2">
+              <div>
+                <dt className="text-sm text-ink-soft">Established</dt>
+                <dd className="mt-1 font-serif text-3xl text-ink">{companyFacts.founded}</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">Production site</dt>
+                <dd className="mt-1 font-serif text-3xl text-ink">{fmt.format(companyFacts.siteArea.value)} m²</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">Factory area</dt>
+                <dd className="mt-1 font-serif text-3xl text-ink">{fmt.format(companyFacts.factoryArea.value)} m²</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-ink-soft">Production equipment</dt>
+                <dd className="mt-1 font-serif text-3xl text-ink">
+                  {equipment.reduce((total, item) => total + item.count, 0)} units
+                </dd>
+              </div>
+            </dl>
+            <div className="mt-8">
+              <h3 className="text-xl">From design intent to production</h3>
+              <p className="mt-3 text-base leading-relaxed text-ink-soft">
+                Our in-house scope covers moulding, spraying, coating, cutting, mesh laminating, engraving and
+                3D-assisted form development. The route is selected around the material, finish and geometry in
+                your project.
+              </p>
+            </div>
           </div>
-          <ul className="grid gap-4 lg:col-span-6">
+          <ul className="grid content-start gap-4 lg:col-span-7">
             {productGroups.map((g, i) => (
-              <Reveal as="li" key={g.id} index={i} className="rounded-3xl bg-ivory p-6">
+              <Reveal as="li" key={g.id} index={i} className="rounded-3xl bg-ivory p-6 sm:p-8">
                 <h3 className="text-xl">{g.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{g.summary}</p>
               </Reveal>
