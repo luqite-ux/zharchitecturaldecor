@@ -8,7 +8,7 @@ import { ProductVisual } from '@/components/site/product-visual'
 import { RfqForm } from '@/components/site/rfq-form'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 import { insulationCores, panelFinishes, structuralLayer } from '@/lib/content/panels'
-import { getGroup, getProduct, products } from '@/lib/content/products'
+import { getGroup, products } from '@/lib/content/products'
 import { getPublishedProduct, getPublishedProducts } from '@/lib/products-db'
 
 export const revalidate = 60

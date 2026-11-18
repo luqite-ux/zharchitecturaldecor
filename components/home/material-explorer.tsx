@@ -85,13 +85,15 @@ export function MaterialExplorer() {
   const [coreId, setCoreId] = useState<CoreId>('eps')
   const [explode, setExplode] = useState(0.7)
   const [view, setView] = useState<PanelView>('angle')
-  const [reduced, setReduced] = useState(false)
-  const [coarse, setCoarse] = useState(false)
+  const [reduced, setReduced] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
+  const [coarse] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches,
+  )
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReduced(mq.matches)
-    setCoarse(window.matchMedia('(pointer: coarse)').matches)
     const onChange = () => setReduced(mq.matches)
     mq.addEventListener('change', onChange)
     return () => mq.removeEventListener('change', onChange)
@@ -114,7 +116,9 @@ export function MaterialExplorer() {
   }, [])
 
   useEffect(() => {
-    if (near) setWebgl(canUseWebGL() ? 'ok' : 'unavailable')
+    if (!near) return
+    const frame = requestAnimationFrame(() => setWebgl(canUseWebGL() ? 'ok' : 'unavailable'))
+    return () => cancelAnimationFrame(frame)
   }, [near])
 
   const finish = panelFinishes.find((f) => f.id === finishId)!

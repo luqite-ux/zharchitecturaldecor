@@ -10,8 +10,8 @@ export function Empty({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
 export function EmptyHeader({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return <div className={merge('flex max-w-xl flex-col items-center gap-3', className)} {...props} />
 }
-export function EmptyMedia({ className, variant: _variant, ...props }: HTMLAttributes<HTMLDivElement> & { variant?: 'icon' }) {
-  return <div className={merge('flex size-12 items-center justify-center rounded-full bg-muted text-foreground', className)} {...props} />
+export function EmptyMedia({ className, variant, ...props }: HTMLAttributes<HTMLDivElement> & { variant?: 'icon' }) {
+  return <div data-variant={variant} className={merge('flex size-12 items-center justify-center rounded-full bg-muted text-foreground', className)} {...props} />
 }
 export function EmptyTitle({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) {
   return <h2 className={merge('font-serif text-2xl text-foreground', className)} {...props} />

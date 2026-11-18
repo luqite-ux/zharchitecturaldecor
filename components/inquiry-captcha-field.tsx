@@ -17,6 +17,7 @@ type InquiryCaptchaFieldProps = {
   answerName?: string
   scopeName?: string
   refreshKey?: number
+  endpoint?: string
   className?: string
 }
 
@@ -25,6 +26,7 @@ export function InquiryCaptchaField({
   answerName = 'captchaAnswer',
   scopeName = 'captchaScope',
   refreshKey = 0,
+  endpoint = '/api/captcha',
   className = '',
 }: InquiryCaptchaFieldProps) {
   const [scope] = useState(() => createInquiryCaptchaScope())
@@ -39,7 +41,7 @@ export function InquiryCaptchaField({
     setError('')
     setChallenge(null)
     try {
-      const response = await fetch(`/api/captcha?scope=${encodeURIComponent(scope)}`, {
+      const response = await fetch(`${endpoint}?scope=${encodeURIComponent(scope)}`, {
         cache: 'no-store',
         signal: request.signal,
       })
@@ -54,11 +56,14 @@ export function InquiryCaptchaField({
     } finally {
       if (requests.isCurrent(request)) setLoading(false)
     }
-  }, [requests, scope])
+  }, [endpoint, requests, scope])
 
   useEffect(() => {
-    void refresh()
-    return () => requests.abortCurrent()
+    const frame = requestAnimationFrame(() => void refresh())
+    return () => {
+      cancelAnimationFrame(frame)
+      requests.abortCurrent()
+    }
   }, [refresh, refreshKey, requests])
 
   return (

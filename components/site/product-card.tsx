@@ -8,7 +8,11 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
   return (
     <Reveal as="article" index={index} className="group relative flex flex-col overflow-hidden rounded-3xl bg-mineral ring-1 ring-border transition-shadow focus-within:ring-2 focus-within:ring-terracotta hover:shadow-[0_18px_50px_-30px_rgba(60,45,30,0.45)]">
       <ProductVisual
-        image={product.image}
+        image={{
+          ...product.image,
+          fit: product.cardFit ?? product.image.fit,
+          focal: product.cardFocal ?? product.image.focal,
+        }}
         aspect="aspect-[4/3]"
         tone={product.image.background === 'white' ? 'bg-stone/50' : 'bg-stone'}
         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

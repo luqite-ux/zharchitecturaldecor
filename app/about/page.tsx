@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { PageHero } from '@/components/site/page-hero'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
@@ -37,6 +38,9 @@ export default function AboutPage() {
               {fmt.format(companyFacts.factoryArea.value)} m² factory. Mouldings, finished panels and custom
               components are developed from your drawings and produced on our own lines.
             </p>
+            <p className="mt-4 text-lg leading-relaxed text-ink-soft">
+              We also provide on-site installation and construction technical support for facade &amp; interior projects.
+            </p>
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-7 border-y border-border py-7 sm:grid-cols-3 lg:grid-cols-2">
               <div>
                 <dt className="text-sm text-ink-soft">Established</dt>
@@ -74,6 +78,31 @@ export default function AboutPage() {
               </Reveal>
             ))}
           </ul>
+        </div>
+      </Section>
+
+      <Section sectionId="about-company-images" labelledBy="about-company-images-title" className="bg-ivory">
+        <div className="container-wide">
+          <SectionHeading
+            id="about-company-images-title"
+            eyebrow="Production base"
+            title="Our facility and production environment"
+            lead="Customer-supplied views of our factory, equipment, workshop and finished components."
+          />
+          <div data-testid="company-facility-gallery" className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-12">
+            {[
+              { src: '/images/company/factory-exterior.jpg', alt: 'Exterior view of Anhui Zhenghui production buildings', className: 'lg:col-span-7' },
+              { src: '/images/company/engraving-machine.png', alt: 'CNC engraving machine inside the Zhenghui workshop', className: 'lg:col-span-5' },
+              { src: '/images/company/production-workshop.png', alt: 'Workers and moulds inside the Zhenghui production workshop', className: 'lg:col-span-5' },
+              { src: '/images/company/finished-components.png', alt: 'Finished architectural components arranged for inspection', className: 'lg:col-span-7' },
+            ].map((image, index) => (
+              <Reveal key={image.src} index={index} className={image.className}>
+                <figure className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-stone">
+                  <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 58vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+                </figure>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </Section>
 

@@ -190,7 +190,11 @@ export function RfqForm({
         />
       </Field>
 
-      <InquiryCaptchaField refreshKey={refreshKey} className="rounded-xl border border-border bg-stone/50 p-4 sm:col-span-2" />
+      <InquiryCaptchaField
+        endpoint={captchaEndpoint}
+        refreshKey={refreshKey}
+        className="rounded-xl border border-border bg-stone/50 p-4 sm:col-span-2"
+      />
 
       <div className="flex flex-col gap-3 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-ink-soft">

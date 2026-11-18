@@ -85,7 +85,10 @@ function makeGrainTexture() {
 export default function PanelScene(props: PanelSceneProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const propsRef = useRef(props)
-  propsRef.current = props
+
+  useEffect(() => {
+    propsRef.current = props
+  }, [props])
 
   useEffect(() => {
     const container = containerRef.current

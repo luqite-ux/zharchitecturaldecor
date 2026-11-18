@@ -30,7 +30,7 @@ export default function ManufacturingPage() {
           <Reveal className="lg:col-span-7">
             <figure className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-stone">
               <Image
-                src="/images/factory/engraving-machine-hall.jpg"
+                src="/images/factory/engraving-machine-daylight.png"
                 alt="Engraving machine with control cabinet inside a steel-framed factory hall"
                 fill
                 sizes="(min-width: 1024px) 58vw, 100vw"

@@ -72,7 +72,6 @@ const productRows = [
   ['water-in-sand-insulated-panel','Water-in-Sand Finish Insulated Decorative Panel','insulated-decorative-panels','Water-in-sand finish on a calcium-silicate structural layer with a selectable insulation core.','A5',assets.panels.slice(2,3),panelSpecs],
   ['ultrathin-stone-insulated-panel','Natural Ultrathin Stone Insulated Decorative Panel','insulated-decorative-panels','Natural ultrathin stone finish on a calcium-silicate structural layer with a selectable insulation core.','A6',assets.panels.slice(1,2),panelSpecs],
   ['cement-texture-design-objects','Cement-Texture Design Objects','custom-design-objects','Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.','Custom',assets.cement,{ 'Development input':'Reference image, drawing or 3D file', 'Final dimensions':'Confirmed during RFQ' }],
-  ['uhpc-custom-components','UHPC Custom Components','custom-design-objects','Custom UHPC components for curved and sculptural architectural forms.','UHPC',assets.samples,{ 'Monthly GRC / UHPC capacity':'12,000 m²', 'Development input':'Design intent, drawings or 3D model' }],
 ]
 
 const domain = 'zharchitecturaldecor.com'

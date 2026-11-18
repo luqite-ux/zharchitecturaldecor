@@ -23,6 +23,9 @@ export interface Product {
   confirmWithUs: string[]
   capacity?: { label: string; value: number; unit: string }
   image: ProductImage
+  /** Customer-approved crop used only on listing cards; detail galleries keep the source fit. */
+  cardFit?: 'contain' | 'cover'
+  cardFocal?: string
   gallery?: ProductImage[]
 }
 
@@ -52,7 +55,7 @@ export const productGroups: ProductGroup[] = [
     id: 'custom-design-objects',
     name: 'Custom Design Objects',
     summary:
-      'Cement-textured objects and UHPC components developed from your design intent.',
+      'Cement-textured objects developed from your design intent.',
     anchor: 'custom-design-objects',
   },
 ]
@@ -152,6 +155,8 @@ export const products: Product[] = [
       fit: 'contain',
       background: 'photo',
     },
+    cardFit: 'cover',
+    cardFocal: '50% 52%',
     gallery: numberedGallery('grg', 12, 'GRG interior decorative element'),
   },
   {
@@ -262,38 +267,9 @@ export const products: Product[] = [
       fit: 'contain',
       background: 'photo',
     },
+    cardFit: 'cover',
+    cardFocal: '50% 50%',
     gallery: numberedGallery('cement-design', 2, 'Cement-texture design object'),
-  },
-  {
-    slug: 'uhpc-custom-components',
-    name: 'UHPC Custom Components',
-    groupId: 'custom-design-objects',
-    summary: 'Custom ultra-high-performance concrete components.',
-    description:
-      'UHPC components are developed for sculptural and curved architectural forms, such as flowing facade features and column details. Geometry is developed with you from design intent through to a producible component.',
-    highlights: [
-      'Curved and sculptural architectural forms',
-      'Developed from design intent',
-      'Produced on dedicated GRC and UHPC lines',
-    ],
-    confirmWithUs: [
-      'Design intent or 3D model',
-      'Component dimensions and quantity',
-      'Surface finish and colour',
-      'Installation interface',
-    ],
-    capacity: { label: 'GRC / UHPC monthly capacity', value: 12000, unit: 'm²' },
-    image: {
-      src: '/images/banners/hero-surfaces.jpg',
-      alt: 'Curved pale concrete facade forms with gold trim on a modern building',
-      fit: 'cover',
-      focal: '48% 80%',
-      background: 'photo',
-    },
-    gallery: [
-      { src: '/images/source/products/samples/c3bfb4e3-1428-445e-a044-b2204f4ec511.jpg', alt: 'Customer-supplied custom component sample', fit: 'contain', background: 'white' },
-      { src: '/images/source/products/samples/cf6baff5-872d-41be-8974-52964bb60106.jpg', alt: 'Customer-supplied custom component sample', fit: 'contain', background: 'white' },
-    ],
   },
 ]
 

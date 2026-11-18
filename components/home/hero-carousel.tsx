@@ -15,11 +15,12 @@ export function HeroCarousel({ slides = heroSlides }: { slides?: HeroSlide[] }) 
   const [userPlaying, setUserPlaying] = useState(true)
   const [visible, setVisible] = useState(true)
   const [held, setHeld] = useState(false)
-  const [reduced, setReduced] = useState(false)
+  const [reduced, setReduced] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReduced(mq.matches)
     const onChange = () => setReduced(mq.matches)
     mq.addEventListener('change', onChange)
     return () => mq.removeEventListener('change', onChange)
