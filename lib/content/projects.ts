@@ -43,7 +43,7 @@ export const projectCases: ProjectCase[] = [
     nameEn: 'Luhe · Cuihu Meishu Project',
     place: 'Luhe',
     image: {
-      src: '/images/projects-optimized/luhe-cuihu-meishu.jpg',
+      src: '/images/projects-optimized/luhe-cuihu-meishu-hd.png',
       alt: 'Residential facade at Luhe Cuihu Meishu',
       fit: 'cover',
       background: 'photo',
