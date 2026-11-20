@@ -126,6 +126,17 @@
   }
 }
 
+/* The customer presents the four insulated finishes as part of the architectural system.
+   Keep the established desktop order and lead with those finishes on phones. */
+@media (max-width: 1023.98px) {
+  #products-architectural-decorative-elements .product-catalog-grid > li[data-product-kind='insulated-panel'] {
+    order: 0;
+  }
+  #products-architectural-decorative-elements .product-catalog-grid > li[data-product-kind='architectural-element'] {
+    order: 1;
+  }
+}
+
 /* Scroll-triggered reveal: items stay visible until a section is armed after hydration. */
 .reveal-item {
   transition:
