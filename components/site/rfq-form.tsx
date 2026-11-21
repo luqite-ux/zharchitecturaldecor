@@ -157,7 +157,7 @@ export function RfqForm({
         />
       </Field>
       <p id={`${p}-dimensions-hint`} className="sr-only">
-        Include sizes, profiles or panel formats if known.
+        Include sizes, profiles or component formats if known.
       </p>
       <p id={`${p}-quantity-hint`} className="sr-only">
         State the unit, for example metres, square metres or pieces.

@@ -16,7 +16,7 @@ export function ManufacturingBand() {
             className="lg:col-span-7"
             eyebrow="Manufacturing"
             title="An in-house production base built since 2018"
-            lead="Moulding, spraying, coating, cutting and engraving run on our own lines, so profiles, finishes and cores stay under one roof."
+            lead="Moulding, spraying, coating, cutting and engraving run on our own lines, so profiles, finishes and custom forms stay under one roof."
           />
           <Reveal index={3} className="lg:col-span-5 lg:justify-self-end">
             <Link

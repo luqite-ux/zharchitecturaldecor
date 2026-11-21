@@ -20,7 +20,7 @@ export function RfqSection() {
             id="rfq-title"
             eyebrow="Request a quotation"
             title="Tell us what you are building"
-            lead="Share your drawings and project conditions and we will review the right material family, finish and core."
+            lead="Share your drawings and project conditions and we will review the right material family, finish and geometry."
           />
           <Reveal index={3}>
             <ul className="mt-8 space-y-3">
