@@ -37,13 +37,6 @@ export const monthlyCapacity = [
     unit: 'm',
     note: 'Monthly capacity',
   },
-  {
-    id: 'board-lines',
-    label: 'Homogeneous / ceramic board lines',
-    value: 80000,
-    unit: 'm',
-    note: 'Monthly capacity',
-  },
 ] as const
 
 export const deliverySteps = [
@@ -53,11 +46,11 @@ export const deliverySteps = [
   },
   {
     title: 'Specification review',
-    body: 'We review the material family, finish, core option and detailing against your drawings.',
+    body: 'We review the material family, finish, geometry and detailing against your drawings.',
   },
   {
     title: 'Sample and finish alignment',
-    body: 'Finish, profile and core choices are aligned with your design team before production planning.',
+    body: 'Finish, profile and form choices are aligned with your design team before production planning.',
   },
   {
     title: 'Production',
@@ -75,19 +68,7 @@ export const faqs = [
     a: 'Product interest, project location, dimensions or specifications, quantity and any drawings or file references. The more of these you share, the faster we can review your request. Pricing is project-specific and is provided through the quotation process.',
   },
   {
-    q: 'Which insulation cores are available for insulated decorative panels?',
-    a: 'Six core variants are available: EPS, HEPS, XPS, PU, rock wool and composite insulation board. The structural layer is calcium-silicate board, finished with real-stone, stone-effect, water-in-sand or natural ultrathin stone surfaces.',
-  },
-  {
-    q: 'What fire class applies to each core?',
-    a: 'EPS, HEPS, XPS and PU cores are indicated as fire class B1. Rock wool and composite insulation board cores are indicated as fire class A1. Please confirm project-specific requirements with our team.',
-  },
-  {
     q: 'Can you produce custom components from drawings?',
     a: 'Yes. Custom components such as GRC, GRG, EPS and UHPC elements can be developed from your drawings. Engraving machines and 3D printers support profile and form development.',
-  },
-  {
-    q: 'Do you publish technical values online?',
-    a: 'Technical values such as thermal conductivity and thickness depend on the selected system and project. They are confirmed per project rather than published as generic figures.',
   },
 ] as const

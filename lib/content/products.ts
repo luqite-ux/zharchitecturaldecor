@@ -1,6 +1,5 @@
 export type ProductGroupId =
   | 'architectural-decorative-elements'
-  | 'insulated-decorative-panels'
   | 'custom-design-objects'
 
 export interface ProductImage {
@@ -45,26 +44,12 @@ export const productGroups: ProductGroup[] = [
     anchor: 'architectural-decorative-elements',
   },
   {
-    id: 'insulated-decorative-panels',
-    name: 'Insulated Decorative Panels',
-    summary:
-      'Finished panels built from a decorative surface, a calcium-silicate structural layer and a selectable insulation core.',
-    anchor: 'insulated-decorative-panels',
-  },
-  {
     id: 'custom-design-objects',
     name: 'Custom Design Objects',
     summary:
       'Cement-textured objects developed from your design intent.',
     anchor: 'custom-design-objects',
   },
-]
-
-const panelConfirm = [
-  'Insulation core option',
-  'Panel dimensions and joint layout',
-  'Colour and finish selection',
-  'Quantity and project location',
 ]
 
 const numberedGallery = (folder: string, count: number, alt: string): ProductImage[] =>
@@ -158,90 +143,6 @@ export const products: Product[] = [
     cardFit: 'cover',
     cardFocal: '50% 52%',
     gallery: numberedGallery('grg', 12, 'GRG interior decorative element'),
-  },
-  {
-    slug: 'real-stone-insulated-panel',
-    name: 'Real-Stone Finish',
-    groupId: 'insulated-decorative-panels',
-    summary: 'Insulated panel with a speckled real-stone surface.',
-    description:
-      'A real-stone finish applied to a calcium-silicate structural layer, bonded to your choice of insulation core. The speckled mineral surface is shown in several colourways, with the panel cross-section visible in the reference image.',
-    highlights: [
-      'Finish on a calcium-silicate structural layer',
-      'Six insulation core variants',
-      'Several colourways available',
-    ],
-    confirmWithUs: panelConfirm,
-    image: {
-      src: '/images/panels/real-stone-finish.jpg',
-      alt: 'Three speckled stone-finish colour samples beside a cut-away insulated panel with brackets',
-      fit: 'contain',
-      background: 'white',
-    },
-    gallery: [{ src: '/images/source/products/panels/真石漆保温装饰板外墙外保温装饰系统.jpg', alt: 'Real-stone finish insulated decorative panel system', fit: 'contain', background: 'white' }],
-  },
-  {
-    slug: 'stone-effect-insulated-panel',
-    name: 'Stone-Effect Finish',
-    groupId: 'insulated-decorative-panels',
-    summary: 'Insulated panel with a stone-effect surface in muted tones.',
-    description:
-      'A stone-effect finish on a calcium-silicate structural layer, paired with a selectable insulation core. Colourways range across grey, olive and green speckle tones.',
-    highlights: [
-      'Stone-look surface with layered speckle',
-      'Calcium-silicate structural layer',
-      'Six insulation core variants',
-    ],
-    confirmWithUs: panelConfirm,
-    image: {
-      src: '/images/panels/stone-effect-finish.jpg',
-      alt: 'Three grey and olive stone-effect colour samples beside a cut-away insulated panel with purple brackets',
-      fit: 'contain',
-      background: 'white',
-    },
-    gallery: [{ src: '/images/source/products/panels/仿石涂料保温装饰板外墙外保温装饰系统.jpg', alt: 'Stone-effect finish insulated decorative panel system', fit: 'contain', background: 'white' }],
-  },
-  {
-    slug: 'water-in-sand-insulated-panel',
-    name: 'Water-in-Sand Finish',
-    groupId: 'insulated-decorative-panels',
-    summary: 'Insulated panel with a fine, sand-like water-in-sand surface.',
-    description:
-      'A water-in-sand finish with a fine, even texture, shown in soft blue, green and ochre tones. It sits on a calcium-silicate structural layer over your selected insulation core.',
-    highlights: [
-      'Fine, even sand-like texture',
-      'Soft blue, green and ochre colourways',
-      'Six insulation core variants',
-    ],
-    confirmWithUs: panelConfirm,
-    image: {
-      src: '/images/panels/water-in-sand-finish.jpg',
-      alt: 'Three pale blue, green and ochre sand-textured colour samples beside a cut-away insulated panel',
-      fit: 'contain',
-      background: 'white',
-    },
-    gallery: [{ src: '/images/source/products/panels/水包沙保温装饰板外墙外保温装饰系统.jpg', alt: 'Water-in-sand finish insulated decorative panel system', fit: 'contain', background: 'white' }],
-  },
-  {
-    slug: 'ultrathin-stone-insulated-panel',
-    name: 'Natural Ultrathin Stone',
-    groupId: 'insulated-decorative-panels',
-    summary: 'Insulated panel faced with natural ultrathin stone.',
-    description:
-      'A natural ultrathin stone surface in dark, warm and cool granite tones, supported by a calcium-silicate structural layer and your selected insulation core.',
-    highlights: [
-      'Natural stone surface in granite tones',
-      'Calcium-silicate structural layer',
-      'Six insulation core variants',
-    ],
-    confirmWithUs: panelConfirm,
-    image: {
-      src: '/images/panels/natural-ultrathin-stone.jpg',
-      alt: 'Four blue, brown and gold granite colour samples beside a dark cut-away insulated panel',
-      fit: 'contain',
-      background: 'white',
-    },
-    gallery: [{ src: '/images/source/products/panels/天然超薄石材保温装饰板外墙外保温装饰系统.jpg', alt: 'Natural ultrathin stone insulated decorative panel system', fit: 'contain', background: 'white' }],
   },
   {
     slug: 'cement-texture-design-objects',

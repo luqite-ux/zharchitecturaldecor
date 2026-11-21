@@ -38,8 +38,8 @@ export default async function ContactPage({
                   <p className="eyebrow">Project review</p>
                   <h2 className="mt-3 text-3xl">Tell us what you are building</h2>
                   <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                    We manufacture architectural decorative elements, insulated decorative panels and custom
-                    components from project drawings and design references.
+                    We manufacture architectural decorative elements and custom components from project drawings
+                    and design references.
                   </p>
                 </div>
 

@@ -7,7 +7,6 @@ import { ProductCard } from '@/components/site/product-card'
 import { ProductVisual } from '@/components/site/product-visual'
 import { RfqForm } from '@/components/site/rfq-form'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
-import { insulationCores, panelFinishes, structuralLayer } from '@/lib/content/panels'
 import { getGroup, products } from '@/lib/content/products'
 import { getPublishedProduct, getPublishedProducts } from '@/lib/products-db'
 
@@ -38,7 +37,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
   const group = getGroup(product.groupId)
   const related = (await getPublishedProducts()).filter((p) => p.groupId === product.groupId && p.slug !== product.slug)
-  const isPanel = product.groupId === 'insulated-decorative-panels'
   const productSchema = {
     '@context': 'https://schema.org', '@type': 'Product',
     '@id': `https://zharchitecturaldecor.com/products/${product.slug}#product`,
@@ -123,47 +121,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 </Reveal>
               ))}
             </ul>
-          </div>
-        </Section>
-      ) : null}
-
-      {isPanel ? (
-        <Section sectionId="product-panel-build" labelledBy="product-build-title" className="bg-mineral">
-          <div className="container-wide">
-            <SectionHeading
-              id="product-build-title"
-              eyebrow="Panel build"
-              title="Finish, structural layer and a selectable core"
-              lead={`${structuralLayer.label}: ${structuralLayer.description} Technical values are confirmed per project.`}
-            />
-            <div className="mt-12 grid gap-6 lg:grid-cols-2">
-              <Reveal>
-                <h3 className="text-xl">Finish families</h3>
-                <ul className="mt-4 space-y-2">
-                  {panelFinishes.map((f) => (
-                    <li
-                      key={f.id}
-                      className={`rounded-2xl px-5 py-3 text-sm ${f.label === product.name.replace(' Finish', '') || product.name.startsWith(f.label) ? 'bg-ink text-white' : 'bg-ivory text-ink'}`}
-                    >
-                      {f.label}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-              <Reveal index={1}>
-                <h3 className="text-xl">Insulation core variants</h3>
-                <ul className="mt-4 divide-y divide-border overflow-hidden rounded-2xl bg-ivory">
-                  {insulationCores.map((c) => (
-                    <li key={c.id} className="flex items-center justify-between gap-4 px-5 py-3 text-sm">
-                      <span className="text-ink">{c.label}</span>
-                      <span className="rounded-full bg-mineral px-3 py-1 text-xs font-semibold text-ink">
-                        Fire class {c.fireClass}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-            </div>
           </div>
         </Section>
       ) : null}

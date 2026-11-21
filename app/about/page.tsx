@@ -10,7 +10,7 @@ import { siteConfig } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Anhui Zhenghui Decorative Materials Co., Ltd. was founded in 2018 and manufactures architectural decorative elements, insulated decorative panels and custom design objects.',
+    'Anhui Zhenghui Decorative Materials Co., Ltd. was founded in 2018 and manufactures architectural decorative elements and custom design objects.',
   alternates: { canonical: '/about' },
 }
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
         sectionId="about-hero"
         eyebrow="About us"
         title="Decorative building materials, made in-house"
-        lead={`${siteConfig.name} was founded in ${companyFacts.founded}. We make architectural decorative elements, insulated decorative panels and custom design objects.`}
+        lead={`${siteConfig.name} was founded in ${companyFacts.founded}. We make architectural decorative elements and custom design objects.`}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'About Us' }]}
       />
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-ink-soft">
               Our production base covers a {fmt.format(companyFacts.siteArea.value)} m² site with an{' '}
-              {fmt.format(companyFacts.factoryArea.value)} m² factory. Mouldings, finished panels and custom
-              components are developed from your drawings and produced on our own lines.
+              {fmt.format(companyFacts.factoryArea.value)} m² factory. Mouldings and custom components are
+              developed from your drawings and produced on our own lines.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-ink-soft">
               We also provide on-site installation and construction technical support for facade &amp; interior projects.
@@ -112,7 +112,7 @@ export default function AboutPage() {
             id="about-contact-title"
             eyebrow="Work with us"
             title="Bring us a drawing, a sketch or a direction"
-            lead="Tell us what you are building and we will review the right material family, finish and core option."
+            lead="Tell us what you are building and we will review the right material family, finish and geometry."
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

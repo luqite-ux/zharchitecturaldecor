@@ -7,7 +7,7 @@ const applications = [
   {
     id: 'facades',
     title: 'Facades',
-    body: 'Window surrounds, cornices and insulated decorative panels that give an elevation its rhythm and surface.',
+    body: 'Window surrounds, cornices and architectural elements that give an elevation its rhythm and surface.',
     href: '/products/grc-architectural-elements',
     cta: 'GRC architectural elements',
     image: {

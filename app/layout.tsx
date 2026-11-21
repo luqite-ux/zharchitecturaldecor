@@ -22,7 +22,7 @@ const body = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Anhui Zhenghui Decorative Materials | Architectural Decorative Elements and Insulated Panels',
+    default: 'Anhui Zhenghui Decorative Materials | Architectural Decorative Elements',
     template: '%s | Anhui Zhenghui Decorative Materials',
   },
   description: siteConfig.description,

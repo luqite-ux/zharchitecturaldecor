@@ -10,23 +10,13 @@ export const revalidate = 60
 export const metadata: Metadata = {
   title: 'Products',
   description:
-    'Architectural decorative elements, insulated decorative panels and custom design objects, made in-house by Anhui Zhenghui Decorative Materials.',
+    'Architectural decorative elements and custom design objects, made in-house by Anhui Zhenghui Decorative Materials.',
   alternates: { canonical: '/products' },
 }
 
 export default async function ProductsPage() {
   const { products: liveProducts, groups: liveGroups } = await getProductCatalog()
   const displayGroups = liveGroups
-    .filter((group) => group.id !== 'insulated-decorative-panels')
-    .map((group) =>
-      group.id === 'architectural-decorative-elements'
-        ? {
-            ...group,
-            summary:
-              'Profiled mouldings, window surrounds, ornamental components and finished insulated decorative panels for exterior and interior surfaces.',
-          }
-        : group,
-    )
 
   return (
     <>
@@ -34,7 +24,7 @@ export default async function ProductsPage() {
         sectionId="products-hero"
         eyebrow="Products"
         title="Two product systems for architectural surfaces"
-        lead="Architectural decorative elements bring together mouldings, cast components and insulated panels. Custom design objects are developed separately from your design intent."
+        lead="Architectural decorative elements bring together mouldings and cast components. Custom design objects are developed separately from your design intent."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Products' }]}
       >
         <ul className="flex flex-wrap gap-2" aria-label="Jump to a product group">
@@ -62,29 +52,9 @@ export default async function ProductsPage() {
             <SectionHeading id={`${group.id}-title`} eyebrow={`Group 0${gi + 1}`} title={group.name} lead={group.summary} />
             <ul className="product-catalog-grid mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {liveProducts
-                .filter(
-                  (product) =>
-                    product.groupId === group.id ||
-                    (group.id === 'architectural-decorative-elements' &&
-                      product.groupId === 'insulated-decorative-panels'),
-                )
-                .sort((a, b) => {
-                  if (group.id !== 'architectural-decorative-elements') return 0
-                  const aIsPanel = a.groupId === 'insulated-decorative-panels'
-                  const bIsPanel = b.groupId === 'insulated-decorative-panels'
-                  return Number(aIsPanel) - Number(bIsPanel)
-                })
+                .filter((product) => product.groupId === group.id)
                 .map((p, i) => (
-                  <li
-                    key={p.slug}
-                    className="flex"
-                    data-product-kind={
-                      group.id === 'architectural-decorative-elements' &&
-                      p.groupId === 'insulated-decorative-panels'
-                        ? 'insulated-panel'
-                        : 'architectural-element'
-                    }
-                  >
+                  <li key={p.slug} className="flex">
                     <ProductCard product={p} index={i} />
                   </li>
                 ))}

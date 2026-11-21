@@ -8,7 +8,7 @@ import { companyFacts, deliverySteps, equipment, monthlyCapacity } from '@/lib/c
 export const metadata: Metadata = {
   title: 'Manufacturing',
   description:
-    'In-house production base: 25,600 m² site, 18,000 m² factory, and monthly capacity across GRC, UHPC, GRG, EPS and board lines.',
+    'In-house production base: 25,600 m² site, 18,000 m² factory, and monthly capacity across GRC, UHPC, GRG and EPS architectural components.',
   alternates: { canonical: '/manufacturing' },
 }
 
@@ -21,7 +21,7 @@ export default function ManufacturingPage() {
         sectionId="manufacturing-hero"
         eyebrow="Manufacturing"
         title="From design intent to custom components"
-        lead="Moulding, spraying, coating, cutting and engraving run on our own lines, so profiles, finishes and cores stay under one roof."
+        lead="Moulding, spraying, coating, cutting and engraving run on our own lines, so profiles, finishes and custom forms stay under one roof."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Manufacturing' }]}
       />
 

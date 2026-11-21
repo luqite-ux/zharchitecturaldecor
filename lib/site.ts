@@ -7,7 +7,7 @@ export const siteConfig = {
   email: 'info@zharchitecturaldecor.com',
   locale: defaultLocale,
   description:
-    'Architectural decorative elements, insulated decorative panels and custom design objects from Anhui Zhenghui Decorative Materials Co., Ltd.',
+    'Architectural decorative elements and custom design objects from Anhui Zhenghui Decorative Materials Co., Ltd.',
   logo: '/images/brand/zhenghui-logo.png',
 } as const
 

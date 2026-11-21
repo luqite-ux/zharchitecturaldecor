@@ -21,7 +21,7 @@ export const heroSlides: HeroSlide[] = [
     id: 'surfaces',
     role: 'Surfaces',
     title: 'Shape Distinctive Architectural Surfaces',
-    body: 'Explore architectural decorative elements, insulated decorative panels and custom design objects, grouped by how they are specified.',
+    body: 'Explore architectural decorative elements and custom design objects, grouped by how they are specified.',
     primary: { label: 'Explore products', href: '/products' },
     secondary: { label: 'Request a quote', href: '/contact' },
     image: {

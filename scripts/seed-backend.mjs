@@ -49,7 +49,6 @@ const assets = {
   eps: await uploadDir('public/images/source/products/eps', 'products/eps'),
   grc: await uploadDir('public/images/source/products/grc', 'products/grc'),
   grg: await uploadDir('public/images/source/products/grg', 'products/grg'),
-  panels: await uploadDir('public/images/source/products/panels', 'products/panels'),
   cement: await uploadDir('public/images/source/products/cement-design', 'products/cement-design'),
   samples: await uploadDir('public/images/source/products/samples', 'products/samples'),
   factory: await uploadDir('public/images/source/factory', 'factory'),
@@ -59,18 +58,12 @@ const assets = {
 
 const categories = [
   ['architectural-decorative-elements', 'Architectural Decorative Elements'],
-  ['insulated-decorative-panels', 'Insulated Decorative Panels'],
   ['custom-design-objects', 'Custom Design Objects'],
 ]
-const panelSpecs = { 'Structural layer': 'Calcium silicate board', 'Insulation core options': 'EPS, HEPS, XPS, PU, rock wool or composite core', 'Fire class': 'B1 for EPS / HEPS / XPS / PU; A1 for rock wool / composite core', 'Model families': 'A3 / A4 / A5 / A6 with GE / GH / GX / GP / GR / GW core suffixes', 'Final dimensions': 'Confirmed for each project and finish selection' }
 const productRows = [
   ['eps-decorative-mouldings','EPS Decorative Mouldings','architectural-decorative-elements','Profiled EPS mouldings for cornices, bands and façade lines.','EPS',assets.eps,{ 'Monthly capacity':'20,000 m', 'Profile geometry':'Produced from customer drawings' }],
   ['grc-architectural-elements','GRC Architectural Decorative Elements','architectural-decorative-elements','Project-specific GRC window surrounds, arches, cornices and ornamental façade components.','GRC',assets.grc,{ 'Monthly GRC / UHPC capacity':'12,000 m²', 'Production basis':'Project elevation and detail drawings' }],
   ['grg-interior-elements','GRG Interior Decorative Elements','architectural-decorative-elements','GRG columns, relief panels and ornamental components for interior public spaces.','GRG',assets.grg,{ 'Monthly capacity':'5,000 m²', 'Production basis':'Interior design reference and drawings' }],
-  ['real-stone-insulated-panel','Real-Stone Finish Insulated Decorative Panel','insulated-decorative-panels','Real-stone finish on a calcium-silicate structural layer with a selectable insulation core.','A3',assets.panels.slice(3,4),panelSpecs],
-  ['stone-effect-insulated-panel','Stone-Effect Finish Insulated Decorative Panel','insulated-decorative-panels','Stone-effect finish on a calcium-silicate structural layer with a selectable insulation core.','A4',assets.panels.slice(0,1),panelSpecs],
-  ['water-in-sand-insulated-panel','Water-in-Sand Finish Insulated Decorative Panel','insulated-decorative-panels','Water-in-sand finish on a calcium-silicate structural layer with a selectable insulation core.','A5',assets.panels.slice(2,3),panelSpecs],
-  ['ultrathin-stone-insulated-panel','Natural Ultrathin Stone Insulated Decorative Panel','insulated-decorative-panels','Natural ultrathin stone finish on a calcium-silicate structural layer with a selectable insulation core.','A6',assets.panels.slice(1,2),panelSpecs],
   ['cement-texture-design-objects','Cement-Texture Design Objects','custom-design-objects','Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.','Custom',assets.cement,{ 'Development input':'Reference image, drawing or 3D file', 'Final dimensions':'Confirmed during RFQ' }],
 ]
 
@@ -87,17 +80,17 @@ const tenantPayload = {
   contact_phone: '+86 135 8512 6655', contact_whatsapp: '', contact_address_short: 'Tianchang, Anhui, China',
   contact_address_i18n: { en: 'Shibaji Community, Shiliang Town, Tianchang, Anhui, China', zh: '安徽省天长市石梁镇十八集街道' },
   site_title_i18n: { en: 'Anhui Zhenghui Decorative Materials Co., Ltd.' },
-  site_tagline_i18n: { en: 'Architectural Decorative Elements, Insulated Panels and Custom Components' },
-  site_description_i18n: { en: 'Architectural decorative elements, insulated decorative panels and custom GRC, GRG, EPS and UHPC components manufactured in Tianchang, Anhui.' },
-  seo_title_i18n: { en: 'Architectural Decorative Elements and Insulated Panels | Zhenghui' },
-  seo_description_i18n: { en: 'Explore EPS, GRC, GRG and UHPC architectural components plus four insulated decorative panel finish systems from Anhui Zhenghui.' },
-  seo_keywords_i18n: { en: ['architectural decorative elements','GRC components','GRG elements','EPS mouldings','insulated decorative panels','UHPC components'] },
+  site_tagline_i18n: { en: 'Architectural Decorative Elements and Custom Components' },
+  site_description_i18n: { en: 'Architectural decorative elements and custom GRC, GRG, EPS and UHPC components manufactured in Tianchang, Anhui.' },
+  seo_title_i18n: { en: 'Architectural Decorative Elements | Zhenghui' },
+  seo_description_i18n: { en: 'Explore EPS, GRC, GRG and UHPC architectural components from Anhui Zhenghui.' },
+  seo_keywords_i18n: { en: ['architectural decorative elements','GRC components','GRG elements','EPS mouldings','UHPC components'] },
   social_links: {}, google_analytics_id: '', google_tag_manager_id: '',
   notes: 'Sources: verified customer workbook including embedded images, supplied logo, banner/product/factory folders, and 29-page brochure image set. No PDF or PPT file was supplied.',
   extra_settings: {
     company_delivery_task_id: taskId,
     service_expiry: { expires_on: null, enforcement_enabled: false },
-    translation_profile: { industry: 'Architectural decorative materials and custom façade/interior components', company_summary: 'Anhui Zhenghui Decorative Materials Co., Ltd. manufactures EPS, GRC, GRG and UHPC decorative elements and insulated decorative panels in Tianchang, Anhui.', main_products: productRows.map((row) => row[1]), target_markets: ['Overseas B2B architects, façade contractors, developers, distributors and project buyers'], glossary: { 'EPS装饰线条':'EPS decorative mouldings','GRC建筑装饰构件':'GRC architectural decorative elements','GRG室内装饰构件':'GRG interior decorative elements','保温装饰一体板':'insulated decorative panel','水包沙':'water-in-sand finish','真石漆':'real-stone finish','超薄石材':'ultrathin stone','匀质板':'homogeneous insulation board' } },
+    translation_profile: { industry: 'Architectural decorative materials and custom façade/interior components', company_summary: 'Anhui Zhenghui Decorative Materials Co., Ltd. manufactures EPS, GRC, GRG and UHPC decorative elements in Tianchang, Anhui.', main_products: productRows.map((row) => row[1]), target_markets: ['Overseas B2B architects, façade contractors, developers, distributors and project buyers'], glossary: { 'EPS装饰线条':'EPS decorative mouldings','GRC建筑装饰构件':'GRC architectural decorative elements','GRG室内装饰构件':'GRG interior decorative elements' } },
     legal_name_zh: '安徽正辉装饰材料有限公司', legal_name_en: 'Anhui Zhenghui Decorative Materials Co., Ltd.', legal_name_en_status: 'derived_direct_translation',
     legal_name_source: 'Customer workbook and supplied business licence image', site_assets: { banners: assets.banners, factory: assets.factory, projects: assets.projects, technical: assets.technical, certificates: [] },
     certificate_publication_note: 'Only a business licence was supplied; it is retained as internal identity evidence and is not published as a certificate.',
@@ -119,7 +112,7 @@ for (const [index, [slug, name]] of categories.entries()) {
   if (result.error) throw result.error
 }
 for (const [index, [slug, name, categorySlug, description, model, images, specs]] of productRows.entries()) {
-  const features = categorySlug === 'insulated-decorative-panels' ? ['Calcium-silicate structural layer','Selectable insulation core','Finish and joint layout confirmed per project'] : ['Developed from project drawings or design reference','Manufactured on dedicated in-house equipment','Dimensions and finish confirmed during RFQ']
+  const features = ['Developed from project drawings or design reference','Manufactured on dedicated in-house equipment','Dimensions and finish confirmed during RFQ']
   const payload = { tenant_id: tenantId, slug, name, name_en: name, name_i18n: { en: name }, description, description_en: description, description_i18n: { en: description }, overview: description, overview_en: description, overview_i18n: { en: description }, image_url: images[0], category: categories.find((item) => item[0] === categorySlug)?.[1], category_slug: categorySlug, model, features, features_i18n: { en: features }, applications: ['Architectural façades','Interior public spaces','Residential and public building projects'], applications_i18n: { en: ['Architectural façades','Interior public spaces','Residential and public building projects'] }, advantages: [], advantages_i18n: { en: [] }, specs, sort_order: index, is_active: true, extra_data: { images, source: 'customer-supplied material set', seo_title_i18n: { en: `${name} | Zhenghui` }, seo_description_i18n: { en: description } } }
   const result = await db.from('products').upsert(payload, { onConflict: 'tenant_id,slug' })
   if (result.error) throw result.error
@@ -138,5 +131,5 @@ const [tenantRead, adminRead, productsRead, categoriesRead, seoRead, termRead] =
   db.from('tenant_service_terms').select('expires_on,enforcement_enabled').eq('tenant_id', tenantId).single(),
 ])
 for (const result of [tenantRead, adminRead, productsRead, categoriesRead, seoRead, termRead]) if (result.error) throw result.error
-if (productsRead.count !== 9 || categoriesRead.count !== 3 || tenantRead.data.admin_group !== null || adminRead.data.admin_group !== null || adminRead.data.must_change_password !== false || seoRead.data.enabled !== false || termRead.data.enforcement_enabled !== false || termRead.data.expires_on !== null) throw new Error('Readback contract failed')
+if (productsRead.count !== 4 || categoriesRead.count !== 2 || tenantRead.data.admin_group !== null || adminRead.data.admin_group !== null || adminRead.data.must_change_password !== false || seoRead.data.enabled !== false || termRead.data.enforcement_enabled !== false || termRead.data.expires_on !== null) throw new Error('Readback contract failed')
 console.log(JSON.stringify({ result: 'PASS', tenantId, domain, products: productsRead.count, categories: categoriesRead.count, uploadedAssets: Object.values(assets).flat().length, adminGroup: null, seoEnabled: false, serviceExpiry: termRead.data }))

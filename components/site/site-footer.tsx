@@ -20,8 +20,7 @@ export function SiteFooter() {
             <span className="font-serif text-xl text-ink">Zhenghui</span>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-soft">
-            Architectural decorative elements, insulated decorative panels and custom design objects,
-            manufactured by {siteConfig.name}
+            Architectural decorative elements and custom design objects manufactured by {siteConfig.name}
           </p>
           <p className="mt-5 text-sm">
             <span className="text-ink-soft">Email: </span>

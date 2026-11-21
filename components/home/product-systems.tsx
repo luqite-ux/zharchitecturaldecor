@@ -12,8 +12,8 @@ export async function ProductSystems() {
         <SectionHeading
           id="product-systems-title"
           eyebrow="Product systems"
-          title="Three product systems, one drawing-led workflow"
-          lead="Start from a moulding, a finished insulated panel or a fully custom object. Each system is specified against your drawings and project conditions."
+          title="Two product systems, one drawing-led workflow"
+          lead="Start from an architectural element or a fully custom object. Each system is specified against your drawings and project conditions."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
