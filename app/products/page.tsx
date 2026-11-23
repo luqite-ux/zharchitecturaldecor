@@ -4,6 +4,7 @@ import { PageHero } from '@/components/site/page-hero'
 import { ProductCard } from '@/components/site/product-card'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 import { getProductCatalog } from '@/lib/products-db'
+import { pendingProductTypes } from '@/lib/content/products'
 
 export const revalidate = 60
 
@@ -59,6 +60,15 @@ export default async function ProductsPage() {
                   </li>
                 ))}
             </ul>
+            {(pendingProductTypes[group.id] ?? []).length > 0 ? (
+              <ul className="mt-8 flex flex-wrap gap-3" aria-label={`${group.name} additional types`}>
+                {pendingProductTypes[group.id]?.map((name) => (
+                  <li key={name} className="rounded-full border border-border bg-mineral px-5 py-3 text-sm text-ink">
+                    {name} · details on request
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         </Section>
       ))}

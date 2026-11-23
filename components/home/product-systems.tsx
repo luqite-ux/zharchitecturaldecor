@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { getProductCatalog } from '@/lib/products-db'
+import { pendingProductTypes } from '@/lib/content/products'
 import { ProductVisual } from '@/components/site/product-visual'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
@@ -46,6 +47,12 @@ export async function ProductSystems() {
                             {item.name}
                             <ArrowUpRight className="size-4 shrink-0 transition-transform group-hover/card:translate-x-0.5" aria-hidden />
                           </Link>
+                        </li>
+                      ))}
+                      {(pendingProductTypes[group.id] ?? []).map((name) => (
+                        <li key={name} className="flex min-h-12 items-center justify-between gap-4 py-3 text-sm text-ink-soft">
+                          <span>{name}</span>
+                          <span className="text-xs">Details on request</span>
                         </li>
                       ))}
                     </ul>

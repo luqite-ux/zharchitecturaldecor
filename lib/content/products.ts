@@ -50,6 +50,20 @@ export const productGroups: ProductGroup[] = [
   },
 ]
 
+// Names confirmed in the customer's 2026-11-23 revision sheet. Product media
+// and specifications for these entries have not been supplied yet.
+export const pendingProductTypes: Partial<Record<ProductGroupId, string[]>> = {
+  'decorative-mouldings': [
+    'Foamed Ceramic Decorative Lines',
+    'Homogeneous Board Decorative Lines',
+    'Fluorocarbon Board Decorative Lines',
+  ],
+  'craft-ornaments': [
+    'GRG Craft Ornaments',
+    'Fiberglass Reinforced Plastic Craft Ornaments',
+  ],
+}
+
 const numberedGallery = (folder: string, count: number, alt: string): ProductImage[] =>
   Array.from({ length: count }, (_, index) => ({
     src: `/images/source/products/${folder}/${index + 1}.jpg`,
