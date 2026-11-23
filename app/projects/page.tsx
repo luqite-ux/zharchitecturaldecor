@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { PageHero } from '@/components/site/page-hero'
 import { ProductVisual } from '@/components/site/product-visual'
 import { Reveal, Section } from '@/components/site/section'
@@ -7,7 +8,7 @@ import { projectCases } from '@/lib/content/projects'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Eight residential project cases supplied by Anhui Zhenghui Decorative Materials.',
+  description: 'Nine project cases supplied by Anhui Zhenghui Decorative Materials.',
   alternates: { canonical: '/projects' },
 }
 
@@ -18,7 +19,7 @@ export default function ProjectsPage() {
         sectionId="projects-hero"
         eyebrow="Projects"
         title="Project cases"
-        lead="Eight residential developments where our materials have been used. Project scope and details are shared on request."
+        lead="Nine project cases. Project scope and details are shared on request."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Projects' }]}
       />
 
@@ -41,6 +42,9 @@ export default function ProjectsPage() {
                     <span className="eyebrow">Case {String(i + 1).padStart(2, '0')}</span>
                     <h3 className="text-xl text-ink">{p.nameEn}</h3>
                   </div>
+                  {p.gallery?.length ? <div className="grid grid-cols-3 gap-1 p-2 pt-0">
+                    {p.gallery.map((src, index) => <div key={src} className="relative aspect-[4/3]"><Image src={src} alt={`${p.nameEn} image ${index + 2}`} fill sizes="(min-width: 1024px) 11vw, 30vw" className="object-cover" /></div>)}
+                  </div> : null}
                 </article>
               </Reveal>
             ))}

@@ -78,7 +78,7 @@ export function ProjectsStack() {
           <SectionHeading
             id="projects-title"
             eyebrow="Projects"
-            title="Eight residential project cases"
+            title="Nine project cases"
             lead="Cases where our materials were supplied. Scope and details are shared on request."
           />
           <Reveal index={3}>

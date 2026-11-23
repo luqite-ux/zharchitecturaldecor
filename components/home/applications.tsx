@@ -5,23 +5,11 @@ import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
 const applications = [
   {
-    id: 'facades',
-    title: 'Facades',
-    body: 'Window surrounds, cornices and architectural elements that give an elevation its rhythm and surface.',
-    href: '/products/grc-architectural-elements',
-    cta: 'GRC architectural elements',
-    image: {
-      src: '/images/applications/grc-facade.jpg',
-      alt: 'Completed residential facade with GRC window surrounds and cornices',
-      focal: '50% 44%',
-    },
-  },
-  {
     id: 'interiors',
-    title: 'Interiors',
+    title: 'Indoor Scenes',
     body: 'Ornamental GRG components such as pedestals, columns and relief panels for lobbies and feature spaces.',
-    href: '/products/grg-interior-elements',
-    cta: 'GRG interior elements',
+    href: '/projects',
+    cta: 'Project scenes',
     image: {
       src: '/images/applications/grg-interior-elements.jpg',
       alt: 'Row of cream ornamental pedestals with relief scrollwork',
@@ -29,11 +17,23 @@ const applications = [
     },
   },
   {
+    id: 'outdoor',
+    title: 'Outdoor Scenes',
+    body: 'Window surrounds, cornices and architectural elements that give an elevation its rhythm and surface.',
+    href: '/projects#taian-city-landscape',
+    cta: 'Project scenes',
+    image: {
+      src: '/images/applications/grc-facade.jpg',
+      alt: 'Completed residential facade with GRC window surrounds and cornices',
+      focal: '50% 44%',
+    },
+  },
+  {
     id: 'custom-objects',
-    title: 'Custom objects',
+    title: 'Craft Ornaments',
     body: 'Cement-texture objects developed from sketches and design intent for interiors, displays and bespoke applications.',
-    href: '/products/cement-texture-design-objects',
-    cta: 'Cement-texture design objects',
+    href: '/projects',
+    cta: 'Project scenes',
     image: {
       src: '/images/applications/cement-texture-object.jpg',
       alt: 'Customer-supplied collection of cement-texture design objects',
@@ -50,7 +50,7 @@ export function Applications() {
           id="applications-title"
           eyebrow="Applications"
           title="Materials for facades, interiors and custom objects"
-          lead="Choose by where the material will sit. Each route leads to the product family best suited to that setting."
+          lead="Browse project scenes by application. More customer images are being prepared."
         />
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {applications.map((item, i) => (

@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { companyFacts, equipment, monthlyCapacity } from '@/lib/content/company'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
+import { FactoryCarousel } from '@/components/home/factory-carousel'
 
 const fmt = new Intl.NumberFormat('en-US')
 
@@ -31,19 +31,7 @@ export function ManufacturingBand() {
 
         <div className="mt-12 grid gap-5 lg:grid-cols-12">
           <Reveal index={0} className="lg:col-span-7">
-            <figure className="relative h-full min-h-[320px] overflow-hidden rounded-3xl bg-stone">
-              <Image
-                src="/images/factory/engraving-machine-daylight.png"
-                alt="Large engraving machine with red frame in a daylit steel-framed factory hall"
-                fill
-                sizes="(min-width: 1024px) 58vw, 100vw"
-                className="object-cover"
-                style={{ objectPosition: '40% 55%' }}
-              />
-              <figcaption className="absolute bottom-4 left-4 rounded-full bg-mineral/95 px-4 py-1.5 text-xs font-semibold text-ink">
-                Engraving line · profile development
-              </figcaption>
-            </figure>
+            <FactoryCarousel />
           </Reveal>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1">

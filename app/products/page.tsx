@@ -23,8 +23,8 @@ export default async function ProductsPage() {
       <PageHero
         sectionId="products-hero"
         eyebrow="Products"
-        title="Two product systems for architectural surfaces"
-        lead="Architectural decorative elements bring together mouldings and cast components. Custom design objects are developed separately from your design intent."
+        title="Product series"
+        lead="Explore our current product families. UHPC curtain wall details are being confirmed."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Products' }]}
       >
         <ul className="flex flex-wrap gap-2" aria-label="Jump to a product group">

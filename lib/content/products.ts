@@ -1,6 +1,9 @@
 export type ProductGroupId =
-  | 'architectural-decorative-elements'
-  | 'custom-design-objects'
+  | 'uhpc-curtain-wall'
+  | 'decorative-mouldings'
+  | 'grc-components'
+  | 'grg-forms'
+  | 'craft-ornaments'
 
 export interface ProductImage {
   src: string
@@ -36,19 +39,14 @@ export interface ProductGroup {
 }
 
 export const productGroups: ProductGroup[] = [
+  { id: 'uhpc-curtain-wall', name: 'UHPC Curtain Wall', summary: 'Product details are being confirmed.', anchor: 'uhpc-curtain-wall' },
   {
-    id: 'architectural-decorative-elements',
-    name: 'Architectural Decorative Elements',
-    summary:
-      'Profiled mouldings, window surrounds and ornamental components for exterior and interior detailing.',
-    anchor: 'architectural-decorative-elements',
+    id: 'decorative-mouldings', name: 'Decorative Mouldings', summary: 'Profiles and decorative lines for architectural detailing.', anchor: 'decorative-mouldings',
   },
+  { id: 'grc-components', name: 'GRC Components', summary: 'Cast architectural components for exterior detailing.', anchor: 'grc-components' },
+  { id: 'grg-forms', name: 'GRG Forms', summary: 'Formed components for interior detailing.', anchor: 'grg-forms' },
   {
-    id: 'custom-design-objects',
-    name: 'Custom Design Objects',
-    summary:
-      'Cement-textured objects developed from your design intent.',
-    anchor: 'custom-design-objects',
+    id: 'craft-ornaments', name: 'Craft Ornaments', summary: 'Decorative objects developed from design references.', anchor: 'craft-ornaments',
   },
 ]
 
@@ -64,7 +62,7 @@ export const products: Product[] = [
   {
     slug: 'eps-decorative-mouldings',
     name: 'EPS Decorative Mouldings',
-    groupId: 'architectural-decorative-elements',
+    groupId: 'decorative-mouldings',
     summary: 'Profiled EPS mouldings for cornices, bands and facade lines.',
     description:
       'EPS decorative mouldings are cut and shaped into repeatable profiles for cornices, belt courses and facade lines. Profile depth, projection and length are defined by your drawings, so the same shape language can run across a full elevation.',
@@ -91,7 +89,7 @@ export const products: Product[] = [
   {
     slug: 'grc-architectural-elements',
     name: 'GRC Architectural Decorative Elements',
-    groupId: 'architectural-decorative-elements',
+    groupId: 'grc-components',
     summary: 'Glass-fibre reinforced concrete elements such as window surrounds and ornament.',
     description:
       'GRC elements are moulded for exterior detailing: window and door surrounds, arches, cornices and ornamental features. Each element is developed from your elevation drawings so that profile, scale and joint positions work together on the building.',
@@ -118,7 +116,7 @@ export const products: Product[] = [
   {
     slug: 'grg-interior-elements',
     name: 'GRG Interior Decorative Elements',
-    groupId: 'architectural-decorative-elements',
+    groupId: 'grg-forms',
     summary: 'Glass-fibre reinforced gypsum components for interior detailing.',
     description:
       'GRG interior elements include columns, pedestals, relief panels and ornamental features for lobbies, halls and public interiors. Relief patterns and base profiles are developed from your design reference.',
@@ -147,7 +145,7 @@ export const products: Product[] = [
   {
     slug: 'cement-texture-design-objects',
     name: 'Cement-Texture Design Objects',
-    groupId: 'custom-design-objects',
+    groupId: 'craft-ornaments',
     summary: 'Cement-textured objects, from desk pieces to sculptural forms.',
     description:
       'Cement-texture design objects show how form and surface can be developed beyond building elements: sculptural busts, trays, organisers and abstract pieces in white and grey cement tones. 3D printers and engraving machines support form development.',

@@ -22,10 +22,7 @@ export async function getProductCatalog(): Promise<{ products: Product[]; groups
     client.from('product_categories').select('slug,name_i18n').eq('tenant_id', tenantId).eq('is_active', true).order('sort_order'),
   ])
   if (error || categoryError || !data?.length || !categories?.length) return { products: fallbackProducts, groups: fallbackGroups }
-  const groups = fallbackGroups.map((fallback) => {
-    const row = categories.find((category) => category.slug === fallback.id)
-    return row ? { ...fallback, name: row.name_i18n?.en || fallback.name } : fallback
-  })
+  const groups = fallbackGroups
   const output: Product[] = []
   for (const row of data) {
     const fallback = fallbackProducts.find((item) => item.slug === row.slug)
@@ -34,7 +31,7 @@ export async function getProductCatalog(): Promise<{ products: Product[]; groups
     output.push({
       ...fallback,
       name: row.name_i18n?.en || fallback.name,
-      groupId: (groups.some((group) => group.id === row.category_slug) ? row.category_slug : fallback.groupId) as ProductGroupId,
+      groupId: fallback.groupId as ProductGroupId,
       description: row.description_i18n?.en || fallback.description,
       summary: row.description_i18n?.en || fallback.summary,
       image: row.image_url ? { ...fallback.image, src: row.image_url } : fallback.image,

@@ -3,6 +3,7 @@ export interface ProjectCase {
   nameZh: string
   nameEn: string
   place?: string
+  gallery?: string[]
   image: {
     src: string
     alt: string
@@ -13,30 +14,6 @@ export interface ProjectCase {
 }
 
 export const projectCases: ProjectCase[] = [
-  {
-    slug: 'shuyang-zhihui-jiayuan',
-    nameZh: '沭阳·智慧佳园项目',
-    nameEn: 'Shuyang · Zhihui Jiayuan Project',
-    place: 'Shuyang',
-    image: {
-      src: '/images/projects-optimized/shuyang-zhihui-jiayuan.jpg',
-      alt: 'Residential buildings at Shuyang Zhihui Jiayuan',
-      fit: 'cover',
-      background: 'photo',
-    },
-  },
-  {
-    slug: 'xuyi-shenghai-swan-lake',
-    nameZh: '盱眙·圣海天鹅湖项目',
-    nameEn: 'Xuyi · Shenghai Swan Lake Project',
-    place: 'Xuyi',
-    image: {
-      src: '/images/projects-optimized/xuyi-shenghai-swan-lake.jpg',
-      alt: 'Villa facade at Xuyi Shenghai Swan Lake',
-      fit: 'cover',
-      background: 'photo',
-    },
-  },
   {
     slug: 'luhe-cuihu-meishu',
     nameZh: '六合·翠湖美墅项目',
@@ -110,5 +87,19 @@ export const projectCases: ProjectCase[] = [
       fit: 'cover',
       background: 'photo',
     },
+  },
+  {
+    slug: 'taian-city-landscape', nameZh: '山东泰安城市景观', nameEn: 'Tai’an City Landscape', place: 'Tai’an',
+    image: { src: '/images/projects-optimized/taian-city-landscape.jpg', alt: 'Curved white landscape seating in Tai’an', fit: 'cover', background: 'photo' },
+    gallery: ['/images/projects-optimized/taian-city-landscape-2.jpg', '/images/projects-optimized/taian-city-landscape-3.jpg'],
+  },
+  {
+    slug: 'suzhou-shengze-school', nameZh: '苏州盛泽丝绸职业学校', nameEn: 'Suzhou Shengze Silk Vocational School', place: 'Suzhou',
+    image: { src: '/images/projects-optimized/suzhou-shengze-school.jpg', alt: 'Arched school corridor under construction in Suzhou', fit: 'cover', background: 'photo' },
+    gallery: [2, 3, 4, 5, 6].map((index) => `/images/projects-optimized/suzhou-shengze-school-${index}.jpg`),
+  },
+  {
+    slug: 'jinhu-focheng-temple', nameZh: '淮安金湖佛城寺', nameEn: 'Jinhu Focheng Temple', place: 'Huai’an',
+    image: { src: '/images/projects-optimized/jinhu-focheng-temple.jpg', alt: 'Temple building at Jinhu Focheng Temple', fit: 'cover', background: 'photo' },
   },
 ]
