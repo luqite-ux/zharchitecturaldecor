@@ -2,11 +2,15 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { feedbackMedia } from '@/lib/content/customer-feedback-media'
 
 const slides = [
   { src: '/images/factory/engraving-machine-daylight.png', alt: 'Engraving machine in the production hall', caption: 'Engraving line' },
   { src: '/images/company/production-workshop.png', alt: 'Customer supplied production workshop', caption: 'Production workshop' },
   { src: '/images/company/factory-exterior.jpg', alt: 'Customer supplied factory exterior', caption: 'Factory exterior' },
+  { src: feedbackMedia.factoryForming, alt: 'Workers forming a curved component in the production hall', caption: 'Component forming' },
+  { src: feedbackMedia.factoryYard, alt: 'Finished components in the customer factory yard', caption: 'Factory yard' },
+  { src: feedbackMedia.factoryWorkshop, alt: 'Workers handling a large component in the production workshop', caption: 'Production workshop' },
 ]
 
 export function FactoryCarousel() {

@@ -2,6 +2,12 @@
   "tenantId": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
   "source": "2026.11.24-正辉补充资料和细节调整.rar / 幕墙线条综合图片.xlsx",
   "media": {
+    "image1": {
+      "source": "C:\\Users\\Grandlin\\AppData\\Local\\Temp\\zhenghui-review-20261124\\xlsx-media\\image1.png",
+      "sha256": "dfec91433c32b251bbcea1244c8946d84b887d5fdcf2c69eda75c528bb3602ef",
+      "bytes": 2316225,
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image1-dfec91433c32b251bbce.png"
+    },
     "image4": {
       "source": "C:\\Users\\Grandlin\\AppData\\Local\\Temp\\zhenghui-review-20261124\\xlsx-media\\image4.jpeg",
       "sha256": "2f55ae52037975a89bfcb95a9289b94f24abc70439bd7704e8ec391633750de9",
@@ -19,6 +25,18 @@
       "sha256": "c77da7a75cf321daaf02a15f36d925ffaf1603eaf450120f064b63519052603b",
       "bytes": 2950923,
       "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image8-c77da7a75cf321daaf02.png"
+    },
+    "image9": {
+      "source": "C:\\Users\\Grandlin\\AppData\\Local\\Temp\\zhenghui-review-20261124\\xlsx-media\\image9.png",
+      "sha256": "a11699373ac9973cb04a628c77b4a82f33cc56f1f146f0a434db6636bcb9902d",
+      "bytes": 10030066,
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image9-a11699373ac9973cb04a.png"
+    },
+    "image12": {
+      "source": "C:\\Users\\Grandlin\\AppData\\Local\\Temp\\zhenghui-review-20261124\\xlsx-media\\image12.png",
+      "sha256": "7c99dea4bc24aae38864428f350942e24624b810e37e00c58a36664c35f81129",
+      "bytes": 13602011,
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image12-7c99dea4bc24aae38864.png"
     },
     "image13": {
       "source": "C:\\Users\\Grandlin\\AppData\\Local\\Temp\\zhenghui-review-20261124\\xlsx-media\\image13.jpeg",

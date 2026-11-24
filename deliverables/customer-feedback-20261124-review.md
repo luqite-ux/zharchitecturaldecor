@@ -17,4 +17,14 @@
 
 Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用的 EPS 补图为无文字的 `image29.jpeg`；带文字或示意标注的图片未公开采用，故不对原图擅自做生成式修补。其它补充图片已按工作簿分组审阅；是否公开采用以清晰度、类别匹配和客户实际页面用途为准。
 
+## 合并接手 2026-11-23 修改任务
+
+- 原工作台任务：`d0dbc69a-36ea-4a70-8d4b-5c5c5c725f54`。来源：`2026.11.23-正辉网站修改(1).xlsx`、`202611.23-正辉-新增项目案例.docx` 及内嵌截图。
+- 11 月 24 日客户明确改为首页只展示五个大类，因此覆盖了 11 月 23 日首页展示小类的旧布局意见；产品列表仍按五大类组织。
+- 11 月 23 日要求的泰安城市景观、盛泽丝绸职业学校、佛城寺案例已在项目页，佛城寺又纳入 11 月 24 日三张新图。
+- 应用场景已把打叉的室内产品照替换为盛泽学校案例实拍，室外使用泰安案例实拍，工艺摆件采用客户新补实物照；入口分别指向对应案例或产品详情。工艺摆件尚无独立项目案例，不能编造。
+- 工厂轮播已加入 11 月 24 日客户补充的三张生产、厂区与车间照片，图片上传该租户 R2。图片并不证明具体设备、产能数字；原有文案事实仍以既有客户资料为准。
+- UHPC 对应产品详情与部分小类参数，原表注明“对应产品需确认”“缺少产品信息，企业提供”。现有资料不足以补写规格，保留待客户确认，不把待补资料宣称完成。
+- 审核链接：应用场景 `https://zharchitecturaldecor.com/#home-applications`；工厂轮播 `https://zharchitecturaldecor.com/#home-manufacturing`；项目案例 `https://zharchitecturaldecor.com/projects#taian-city-landscape`、`https://zharchitecturaldecor.com/projects#suzhou-shengze-school`、`https://zharchitecturaldecor.com/projects#jinhu-focheng-temple`；产品列表 `https://zharchitecturaldecor.com/products`。
+
 数据变更前快照：`customer-feedback-20261124-before-db.json`。补图 R2 清单：`customer-feedback-20261124-media.json`。当前状态仅为本地代码、构建与数据层准备，尚不构成线上完成。

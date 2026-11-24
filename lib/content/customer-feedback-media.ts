@@ -2,6 +2,9 @@
 const base = 'https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/'
 
 export const feedbackMedia = {
+  factoryForming: `${base}image1-dfec91433c32b251bbce.png`,
+  factoryYard: `${base}image9-a11699373ac9973cb04a.png`,
+  factoryWorkshop: `${base}image12-7c99dea4bc24aae38864.png`,
   uhpc: `${base}image8-c77da7a75cf321daaf02.png`,
   decorativeMouldings: `${base}image4-2f55ae52037975a89bfc.jpeg`,
   epsProfile: `${base}image29-51d40b34a0ee1b103092.jpeg`,

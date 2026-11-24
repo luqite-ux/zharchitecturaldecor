@@ -2,17 +2,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
+import { feedbackMedia } from '@/lib/content/customer-feedback-media'
 
 const applications = [
   {
     id: 'interiors',
     title: 'Indoor Scenes',
     body: 'Ornamental GRG components such as pedestals, columns and relief panels for lobbies and feature spaces.',
-    href: '/projects',
+    href: '/projects#suzhou-shengze-school',
     cta: 'Project scenes',
     image: {
-      src: '/images/applications/grg-interior-elements.jpg',
-      alt: 'Row of cream ornamental pedestals with relief scrollwork',
+      src: '/images/projects-optimized/suzhou-shengze-school.jpg',
+      alt: 'Interior arched corridor at Suzhou Shengze Silk Vocational School',
       focal: '50% 55%',
     },
   },
@@ -23,8 +24,8 @@ const applications = [
     href: '/projects#taian-city-landscape',
     cta: 'Project scenes',
     image: {
-      src: '/images/applications/grc-facade.jpg',
-      alt: 'Completed residential facade with GRC window surrounds and cornices',
+      src: '/images/projects-optimized/taian-city-landscape.jpg',
+      alt: 'Customer supplied outdoor landscape project in Tai’an',
       focal: '50% 44%',
     },
   },
@@ -32,11 +33,11 @@ const applications = [
     id: 'custom-objects',
     title: 'Craft Ornaments',
     body: 'Cement-texture objects developed from sketches and design intent for interiors, displays and bespoke applications.',
-    href: '/projects',
-    cta: 'Project scenes',
+    href: '/products/cement-texture-design-objects',
+    cta: 'View ornaments',
     image: {
-      src: '/images/applications/cement-texture-object.jpg',
-      alt: 'Customer-supplied collection of cement-texture design objects',
+      src: feedbackMedia.craftObjects,
+      alt: 'Customer supplied cement-texture craft ornament',
       focal: '50% 70%',
     },
   },
@@ -50,7 +51,7 @@ export function Applications() {
           id="applications-title"
           eyebrow="Applications"
           title="Materials for facades, interiors and custom objects"
-          lead="Browse project scenes by application. More customer images are being prepared."
+          lead="Browse customer supplied project scenes and craft ornaments by application."
         />
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {applications.map((item, i) => (

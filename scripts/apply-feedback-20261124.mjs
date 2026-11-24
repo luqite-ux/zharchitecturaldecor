@@ -20,7 +20,7 @@ const required = (key) => {
 }
 const mode = process.argv[2]
 const manifestPath = path.resolve('deliverables/customer-feedback-20261124-media.json')
-const selected = [4, 5, 8, 13, 16, 17, 18, 19, 23, 26, 29, 30, 31]
+const selected = [1, 4, 5, 8, 9, 12, 13, 16, 17, 18, 19, 23, 26, 29, 30, 31]
 
 if (mode === 'upload') {
   const sourceDir = process.argv[3]
