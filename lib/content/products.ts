@@ -105,7 +105,7 @@ export const products: Product[] = [
     },
     gallery: [
       ...withoutImages(numberedGallery('eps', 9, 'EPS decorative moulding'), [2, 4, 8]),
-      { src: feedbackMedia.decorativeMouldings, alt: 'Customer supplied EPS decorative profiles', fit: 'contain', background: 'white' },
+      { src: feedbackMedia.epsProfile, alt: 'Customer supplied EPS decorative profiles', fit: 'contain', background: 'white' },
     ],
   },
   {

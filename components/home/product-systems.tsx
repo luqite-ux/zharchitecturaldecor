@@ -6,9 +6,10 @@ import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
 export async function ProductSystems() {
   const { products, groups } = await getProductCatalog()
-  const suppliedCovers: Record<string, { src: string; alt: string; fit: 'contain'; background: 'white' | 'photo' }> = {
+  const suppliedCovers: Record<string, { src: string; alt: string; fit: 'contain' | 'cover'; background: 'white' | 'photo' }> = {
     'uhpc-curtain-wall': { src: feedbackMedia.uhpc, alt: 'Customer supplied UHPC formed component', fit: 'contain', background: 'photo' },
-    'decorative-mouldings': { src: feedbackMedia.decorativeMouldings, alt: 'Customer supplied decorative moulding profiles', fit: 'contain', background: 'white' },
+    'decorative-mouldings': { src: feedbackMedia.decorativeMouldings, alt: 'Customer supplied decorative moulding profiles in production', fit: 'cover', background: 'photo' },
+    'grc-components': { src: feedbackMedia.grcFacade, alt: 'Customer supplied facade showing GRC architectural components', fit: 'cover', background: 'photo' },
     'craft-ornaments': { src: feedbackMedia.craftObjects, alt: 'Customer supplied sculptural design object', fit: 'contain', background: 'photo' },
   }
   return (
