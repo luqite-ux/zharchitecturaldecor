@@ -42,6 +42,7 @@ export function Section({ sectionId, labelledBy, className, children }: SectionP
   return (
     <section
       ref={ref}
+      id={sectionId}
       data-section-id={sectionId}
       aria-labelledby={labelledBy}
       className={cn('relative py-20 sm:py-24 lg:py-28', className)}
