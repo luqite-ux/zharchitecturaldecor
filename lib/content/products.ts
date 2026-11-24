@@ -1,3 +1,5 @@
+import { feedbackMedia } from '@/lib/content/customer-feedback-media'
+
 export type ProductGroupId =
   | 'uhpc-curtain-wall'
   | 'decorative-mouldings'
@@ -72,6 +74,9 @@ const numberedGallery = (folder: string, count: number, alt: string): ProductIma
     background: 'white',
   }))
 
+const withoutImages = (images: ProductImage[], positions: number[]) =>
+  images.filter((_, index) => !positions.includes(index + 1))
+
 export const products: Product[] = [
   {
     slug: 'eps-decorative-mouldings',
@@ -98,7 +103,10 @@ export const products: Product[] = [
       fit: 'contain',
       background: 'white',
     },
-    gallery: numberedGallery('eps', 9, 'EPS decorative moulding'),
+    gallery: [
+      ...withoutImages(numberedGallery('eps', 9, 'EPS decorative moulding'), [2, 4, 8]),
+      { src: feedbackMedia.decorativeMouldings, alt: 'Customer supplied EPS decorative profiles', fit: 'contain', background: 'white' },
+    ],
   },
   {
     slug: 'grc-architectural-elements',
@@ -120,12 +128,12 @@ export const products: Product[] = [
     ],
     capacity: { label: 'GRC / UHPC monthly capacity', value: 12000, unit: 'm²' },
     image: {
-      src: '/images/products/grc-window-surrounds.jpg',
-      alt: 'Line drawings of six decorative window surround designs with arched and rectangular openings',
+      src: '/images/source/products/grc/2.jpg',
+      alt: 'Customer supplied GRC decorative components',
       fit: 'contain',
       background: 'white',
     },
-    gallery: numberedGallery('grc', 16, 'GRC architectural decorative element'),
+    gallery: withoutImages(numberedGallery('grc', 16, 'GRC architectural decorative element'), [1]),
   },
   {
     slug: 'grg-interior-elements',
@@ -147,14 +155,18 @@ export const products: Product[] = [
     ],
     capacity: { label: 'GRG monthly capacity', value: 5000, unit: 'm²' },
     image: {
-      src: '/images/products/grg-ornamental-pedestals.jpg',
-      alt: 'Row of cream-coloured ornamental pedestals with carved floral relief panels and stepped bases',
+      src: '/images/source/products/grg/2.jpg',
+      alt: 'Customer supplied GRG interior decorative elements',
       fit: 'contain',
       background: 'photo',
     },
     cardFit: 'cover',
     cardFocal: '50% 52%',
-    gallery: numberedGallery('grg', 12, 'GRG interior decorative element'),
+    gallery: [
+      ...withoutImages(numberedGallery('grg', 12, 'GRG interior decorative element'), [1, 12]),
+      { src: feedbackMedia.grgRelief, alt: 'Customer supplied GRG relief panel', fit: 'contain', background: 'photo' },
+      { src: feedbackMedia.grgForms, alt: 'Customer supplied GRG formed components', fit: 'contain', background: 'photo' },
+    ],
   },
   {
     slug: 'cement-texture-design-objects',

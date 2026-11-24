@@ -1,3 +1,5 @@
+import { feedbackMedia } from '@/lib/content/customer-feedback-media'
+
 export interface ProjectCase {
   slug: string
   nameZh: string
@@ -100,6 +102,7 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'jinhu-focheng-temple', nameZh: '淮安金湖佛城寺', nameEn: 'Jinhu Focheng Temple', place: 'Huai’an',
-    image: { src: '/images/projects-optimized/jinhu-focheng-temple.jpg', alt: 'Temple building at Jinhu Focheng Temple', fit: 'cover', background: 'photo' },
+    image: { src: feedbackMedia.fochengTemple[0], alt: 'Customer supplied photograph of Jinhu Focheng Temple', fit: 'cover', background: 'photo' },
+    gallery: [...feedbackMedia.fochengTemple.slice(1)],
   },
 ]
