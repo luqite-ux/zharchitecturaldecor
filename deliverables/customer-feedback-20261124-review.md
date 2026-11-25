@@ -55,7 +55,7 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 | EXTRA-01 | 表格红框内 UHPC、装饰线条、GRG、工艺品图片没有更新全 | 同时解析 Excel 普通绘图和 WPS 单元格内图片；UHPC 七图、EPS 补图、GRG 两图写入精确租户产品图库；11 张装饰线条图片作为大类参考展示，其中带“应用效果”字样的图片仅在页面裁去原图上方文字区，不改建筑主体；不混入 EPS 产品；工艺品三图保持 | PASS：双端逐图加载、目视比例和文字区检查 | https://zharchitecturaldecor.com/products#decorative-line-references 、https://zharchitecturaldecor.com/products/uhpc-custom-components#product-gallery 、https://zharchitecturaldecor.com/products/grg-interior-elements#product-gallery 、https://zharchitecturaldecor.com/products/cement-texture-design-objects#product-gallery |
 | EXTRA-02 | 泰安城市景观卡片：原封面放下，夜景图放封面 | 调整封面与缩略图顺序 | PASS：双端卡片目视 | https://zharchitecturaldecor.com/projects#taian-city-landscape |
 | EXTRA-03 | 金湖佛城寺卡片：近景放下，全景图放封面 | 调整封面与缩略图顺序 | PASS：双端卡片目视 | https://zharchitecturaldecor.com/projects#jinhu-focheng-temple |
-| EXTRA-04 | 前六个案例名称按客户中文标注核正 | 逐条更新静态案例的中文来源名称及相关英文展示名；中文来源名保留在资料映射中，公开卡片只显示英文 | 11 月 25 日追加意见覆盖公开中文行，待双端复审 | https://zharchitecturaldecor.com/projects |
+| EXTRA-04 | 前六个案例名称按客户中文标注核正 | 逐条更新静态案例的中文来源名称及相关英文展示名；中文来源名保留在资料映射中，公开卡片只显示英文 | PASS：11 月 25 日追加意见覆盖公开中文行，正式域名双端复审 | https://zharchitecturaldecor.com/projects |
 | EXTRA-05 | 首页工厂设备图右后方杂物清理 | 基于客户真实原图做局部 AI 修图，保留机器结构；原图继续留存，新图 `public/images/factory/engraving-machine-daylight-cleaned.png` 在首页和制造页共用 | PASS：双端设备主体与背景目视 | https://zharchitecturaldecor.com/#home-manufacturing |
 
 表格新增上传 11 张，清单为 `customer-feedback-20261124-media.json`。数据库修改前快照为 `customer-feedback-20261125-additional-before-db.json`；只更新租户 `831d7976-d1b4-4f3d-b09c-1b2448c1e86b` 的 UHPC、EPS、GRG 既有记录图库，回读图库数量分别为 7、8、14。WPS `DISPIMG` 单元格 D3/E3/H3/D4/E4/F4 对应图片已纳入；H3 原图 `image25.jpeg` 含“应用效果”文字，页面只裁去上方文字区，不更改照片内容。J2/K2 的文字拼图未直接公开，已用同类无字 EPS 补图。对 `image25.jpeg` 的 AI 去字试作改变了建筑细节，已拒绝采用，避免伪造客户实物。设备修图通过内建 imagegen 对 `engraving-machine-daylight.png` 编辑，提示词限定保留机器、车间结构、镜头与颜色，只清理右后方散乱边角料；新图已目视核对机器主体。
@@ -66,5 +66,7 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 
 | 编号 | 客户指出的位置 | 修改 | 状态 | 审核链接 |
 |---|---|---|---|---|
-| EXTRA-06 | 项目列表卡片出现中文标题 | 移除项目页和首页案例卡片新增的公开中文行；保留英文展示和内部中文来源名 | 待正式域名双端复审 | https://zharchitecturaldecor.com/projects |
-| EXTRA-07 | 首页 Outdoor Scenes 仍用泰安旧封面 | 改用泰安案例已确认的夜景封面，入口仍指向泰安案例 | 待正式域名双端复审 | https://zharchitecturaldecor.com/#home-applications |
+| EXTRA-06 | 项目列表卡片出现中文标题 | 移除项目页和首页案例卡片新增的公开中文行；保留英文展示和内部中文来源名 | PASS：正式域名 1440px、390px 卡片无中文行、无破图或横向溢出 | https://zharchitecturaldecor.com/projects |
+| EXTRA-07 | 首页 Outdoor Scenes 仍用泰安旧封面 | 改用泰安案例已确认的夜景封面，入口仍指向泰安案例 | PASS：正式域名 1440px、390px 夜景图加载并目视确认，手机裁切正常 | https://zharchitecturaldecor.com/#home-applications |
+
+本轮源码提交 `230caae09abddb246bf2b03c7e0d5059ff959eba` 已推送并经公司 GitHub API 回读。Vercel Production `dpl_6A2vJhgF9HdsabVC5nsTN6Z1uoiL` READY，正式域名 HTML 及图片 URL 的部署标记一致。浏览器证据为 `customer-feedback-20261124-browser/finalfix-*`，其中 `finalfix-outdoor-mobile.png` 直接展示手机端夜景卡片。桌面端 12 个公开路由与手机端 12 个公开路由分批复审：第一次手机端工艺品详情页导航发生 `ERR_CONNECTION_CLOSED`，重试后该页及后续页面均 HTTP 200、无破图和横向溢出；第一次通过的手机前五页证据见 `final-sweep-*-mobile.png`。本轮两项没有未验证项。
