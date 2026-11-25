@@ -52,7 +52,7 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 
 | 编号 | 客户标注 | 已实施内容 | 正式域名状态 | 审核链接 |
 |---|---|---|---|---|
-| EXTRA-01 | 表格红框内 UHPC、装饰线条、GRG、工艺品图片没有更新全 | 按 Excel 绘图锚点复核；UHPC 七图、EPS 补图、GRG 两图写入精确租户产品图库；不同材料的装饰线条图作为大类参考展示，不混入 EPS 产品；工艺品三图保持 | 待双端复审 | https://zharchitecturaldecor.com/products |
+| EXTRA-01 | 表格红框内 UHPC、装饰线条、GRG、工艺品图片没有更新全 | 按 Excel 绘图锚点复核；UHPC 七图、EPS 补图、GRG 两图写入精确租户产品图库；不同材料的装饰线条图作为大类参考展示，不混入 EPS 产品；工艺品三图保持 | 待双端复审 | https://zharchitecturaldecor.com/products#decorative-line-references 、https://zharchitecturaldecor.com/products/uhpc-custom-components#product-gallery 、https://zharchitecturaldecor.com/products/grg-interior-elements#product-gallery 、https://zharchitecturaldecor.com/products/cement-texture-design-objects#product-gallery |
 | EXTRA-02 | 泰安城市景观卡片：原封面放下，夜景图放封面 | 调整封面与缩略图顺序 | 待双端复审 | https://zharchitecturaldecor.com/projects#taian-city-landscape |
 | EXTRA-03 | 金湖佛城寺卡片：近景放下，全景图放封面 | 调整封面与缩略图顺序 | 待双端复审 | https://zharchitecturaldecor.com/projects#jinhu-focheng-temple |
 | EXTRA-04 | 前六个案例名称按客户中文标注核正 | 逐条更新静态案例的中文正式名称及相关英文展示名；项目页与首页案例区同时展示原中文名供核对，不修改其它案例 | 待双端复审 | https://zharchitecturaldecor.com/projects |

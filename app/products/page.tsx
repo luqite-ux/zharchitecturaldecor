@@ -71,7 +71,7 @@ export default async function ProductsPage() {
                 ))}
             </ul>
             {group.id === 'decorative-mouldings' ? (
-              <div className="mt-10">
+              <div id="decorative-line-references" className="mt-10 scroll-mt-28">
                 <h3 className="text-2xl text-ink">Supplied decorative line references</h3>
                 <p className="mt-2 text-sm text-ink-soft">Additional photos from the customer workbook, shown as material references.</p>
                 <ul className="mt-5 grid grid-cols-2 items-start gap-4 lg:grid-cols-5">
