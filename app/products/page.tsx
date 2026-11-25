@@ -11,9 +11,14 @@ import { feedbackMedia } from '@/lib/content/customer-feedback-media'
 const decorativeLineReferences = [
   { src: feedbackMedia.decorativeLineReferences[0], alt: 'Customer supplied decorative line installation', width: 790, height: 576 },
   { src: feedbackMedia.decorativeLineReferences[1], alt: 'Customer supplied facade line detail', width: 1279, height: 1706 },
-  { src: feedbackMedia.decorativeLineReferences[2], alt: 'Customer supplied decorative relief samples', width: 642, height: 645 },
-  { src: feedbackMedia.decorativeLineReferences[3], alt: 'Customer supplied profile stock', width: 800, height: 800 },
-  { src: feedbackMedia.decorativeLineReferences[4], alt: 'Customer supplied formed line sample', width: 600, height: 834 },
+  { src: feedbackMedia.decorativeLineReferences[2], alt: 'Customer supplied formed decorative panels', width: 1440, height: 1080 },
+  { src: feedbackMedia.decorativeLineReferences[3], alt: 'Customer supplied foamed decorative profile', width: 800, height: 800 },
+  { src: feedbackMedia.decorativeLineReferences[4], alt: 'Customer supplied decorative relief samples', width: 642, height: 645 },
+  { src: feedbackMedia.decorativeLineReferences[5], alt: 'Customer supplied profile stock', width: 800, height: 800 },
+  { src: feedbackMedia.decorativeLineReferences[6], alt: 'Customer supplied formed profile lengths', width: 1660, height: 934 },
+  { src: feedbackMedia.decorativeLineReferences[7], alt: 'Customer supplied profile section', width: 727, height: 1292 },
+  { src: feedbackMedia.decorativeLineReferences[8], alt: 'Customer supplied profile close-up', width: 941, height: 1920 },
+  { src: feedbackMedia.decorativeLineReferences[9], alt: 'Customer supplied formed line sample', width: 600, height: 834 },
 ]
 
 export const revalidate = 60
@@ -74,9 +79,9 @@ export default async function ProductsPage() {
               <div id="decorative-line-references" className="mt-10 scroll-mt-28">
                 <h3 className="text-2xl text-ink">Supplied decorative line references</h3>
                 <p className="mt-2 text-sm text-ink-soft">Additional photos from the customer workbook, shown as material references.</p>
-                <ul className="mt-5 grid grid-cols-2 items-start gap-4 lg:grid-cols-5">
+                <ul className="mt-5 columns-2 gap-4 lg:columns-5">
                   {decorativeLineReferences.map((image, index) => (
-                    <Reveal as="li" key={image.src} index={index} className="overflow-hidden rounded-2xl bg-stone">
+                    <Reveal as="li" key={image.src} index={index} className="mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-stone">
                       <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 1024px) 18vw, 48vw" className="h-auto w-full" />
                     </Reveal>
                   ))}
