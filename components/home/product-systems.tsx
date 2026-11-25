@@ -37,7 +37,7 @@ export async function ProductSystems() {
                   {cover ? <ProductVisual
                     image={cover}
                     aspect="aspect-[4/3]"
-                    tone="bg-transparent"
+                    tone={group.id === 'craft-ornaments' ? 'bg-black' : 'bg-transparent'}
                     sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   /> : null}
                   <div className="flex flex-1 flex-col p-6">

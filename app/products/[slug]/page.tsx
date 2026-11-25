@@ -65,7 +65,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
           <Reveal className="lg:col-span-7">
             <ProductVisual
               image={product.image}
-              aspect="aspect-[4/3]"
+              aspect={product.slug === 'cement-texture-design-objects' ? 'aspect-square' : 'aspect-[4/3]'}
               tone={product.image.background === 'white' ? 'bg-stone/50' : 'bg-stone'}
               className="rounded-3xl"
               sizes="(min-width: 1024px) 58vw, 100vw"
@@ -117,7 +117,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {product.gallery.map((image, index) => (
                 <Reveal as="li" key={image.src} index={index} className="overflow-hidden rounded-3xl bg-white">
-                  <ProductVisual image={image} aspect="aspect-[4/3]" tone="bg-white" sizes="(min-width: 1024px) 33vw, 50vw" />
+                  <ProductVisual image={image} aspect={product.slug === 'cement-texture-design-objects' && index === 0 ? 'aspect-square' : 'aspect-[4/3]'} tone={product.slug === 'cement-texture-design-objects' && index === 0 ? 'bg-black' : 'bg-white'} sizes="(min-width: 1024px) 33vw, 50vw" />
                 </Reveal>
               ))}
             </ul>

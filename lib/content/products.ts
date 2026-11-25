@@ -212,6 +212,7 @@ export const products: Product[] = [
       fit: 'cover',
       background: 'photo',
     },
+    cardFit: 'contain',
     gallery: [
       { src: feedbackMedia.craftObjects, alt: 'Customer supplied sculptural craft ornament', fit: 'cover', background: 'photo' },
       { src: feedbackMedia.craftPlantersOutdoor, alt: 'Customer supplied outdoor planter application photo', fit: 'cover', background: 'photo' },

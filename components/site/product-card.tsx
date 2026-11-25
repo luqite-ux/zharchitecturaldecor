@@ -14,7 +14,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
           focal: product.cardFocal ?? product.image.focal,
         }}
         aspect="aspect-[4/3]"
-        tone={product.image.background === 'white' ? 'bg-stone/50' : 'bg-stone'}
+        tone={product.slug === 'cement-texture-design-objects' ? 'bg-black' : product.image.background === 'white' ? 'bg-stone/50' : 'bg-stone'}
         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
       />
       <div className="flex flex-1 flex-col gap-3 p-6">
