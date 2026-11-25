@@ -24,9 +24,9 @@ const applications = [
     href: '/projects#taian-city-landscape',
     cta: 'Project scenes',
     image: {
-      src: '/images/projects-optimized/taian-city-landscape.jpg',
-      alt: 'Customer supplied outdoor landscape project in Tai’an',
-      focal: '50% 44%',
+      src: '/images/projects-optimized/taian-city-landscape-2.jpg',
+      alt: 'Illuminated landscape seating in Tai’an at night',
+      focal: '60% 50%',
     },
   },
   {
