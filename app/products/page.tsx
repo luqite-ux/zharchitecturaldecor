@@ -15,10 +15,11 @@ const decorativeLineReferences = [
   { src: feedbackMedia.decorativeLineReferences[3], alt: 'Customer supplied foamed decorative profile', width: 800, height: 800 },
   { src: feedbackMedia.decorativeLineReferences[4], alt: 'Customer supplied decorative relief samples', width: 642, height: 645 },
   { src: feedbackMedia.decorativeLineReferences[5], alt: 'Customer supplied profile stock', width: 800, height: 800 },
-  { src: feedbackMedia.decorativeLineReferences[6], alt: 'Customer supplied formed profile lengths', width: 1660, height: 934 },
-  { src: feedbackMedia.decorativeLineReferences[7], alt: 'Customer supplied profile section', width: 727, height: 1292 },
-  { src: feedbackMedia.decorativeLineReferences[8], alt: 'Customer supplied profile close-up', width: 941, height: 1920 },
-  { src: feedbackMedia.decorativeLineReferences[9], alt: 'Customer supplied formed line sample', width: 600, height: 834 },
+  { src: feedbackMedia.decorativeLineReferences[6], alt: 'Customer supplied architectural application reference', width: 1242, height: 1409, cropLabel: true },
+  { src: feedbackMedia.decorativeLineReferences[7], alt: 'Customer supplied formed profile lengths', width: 1660, height: 934 },
+  { src: feedbackMedia.decorativeLineReferences[8], alt: 'Customer supplied profile section', width: 727, height: 1292 },
+  { src: feedbackMedia.decorativeLineReferences[9], alt: 'Customer supplied profile close-up', width: 941, height: 1920 },
+  { src: feedbackMedia.decorativeLineReferences[10], alt: 'Customer supplied formed line sample', width: 600, height: 834 },
 ]
 
 export const revalidate = 60
@@ -82,7 +83,7 @@ export default async function ProductsPage() {
                 <ul className="mt-5 columns-2 gap-4 lg:columns-5">
                   {decorativeLineReferences.map((image, index) => (
                     <Reveal as="li" key={image.src} index={index} className="mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-stone">
-                      <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 1024px) 18vw, 48vw" className="h-auto w-full" />
+                      <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 1024px) 18vw, 48vw" className={image.cropLabel ? '-mt-[36%] h-auto w-full' : 'h-auto w-full'} />
                     </Reveal>
                   ))}
                 </ul>

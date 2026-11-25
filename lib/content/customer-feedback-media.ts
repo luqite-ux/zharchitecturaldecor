@@ -22,6 +22,7 @@ export const feedbackMedia = {
     `${base}image24-a308fe984939b0476e17.jpeg`,
     `${base}image2-4f316088293980a9df7a.jpeg`,
     `${base}image3-0737fd639c44c8bddb98.jpeg`,
+    `${base}image25-50144fdb1cad200b8f87.jpeg`,
     `${base}image26-cf3eb03ba903b50830dc.png`,
     `${base}image27-3034f9de9be725e94b83.png`,
     `${base}image28-9c98af478b6e36a35242.png`,
