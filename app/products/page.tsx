@@ -25,7 +25,7 @@ export default async function ProductsPage() {
         sectionId="products-hero"
         eyebrow="Products"
         title="Product series"
-        lead="Explore our current product families. UHPC curtain wall details are being confirmed."
+        lead="Explore customer supplied facade components, decorative lines, interior forms and craft ornaments."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Products' }]}
       >
         <ul className="flex flex-wrap gap-2" aria-label="Jump to a product group">

@@ -41,7 +41,7 @@ export interface ProductGroup {
 }
 
 export const productGroups: ProductGroup[] = [
-  { id: 'uhpc-curtain-wall', name: 'UHPC Curtain Wall', summary: 'Product details are being confirmed.', anchor: 'uhpc-curtain-wall' },
+  { id: 'uhpc-curtain-wall', name: 'UHPC Curtain Wall', summary: 'Custom facade panels developed from project drawings.', anchor: 'uhpc-curtain-wall' },
   {
     id: 'decorative-mouldings', name: 'Decorative Mouldings', summary: 'Profiles and decorative lines for architectural detailing.', anchor: 'decorative-mouldings',
   },
@@ -78,6 +78,26 @@ const withoutImages = (images: ProductImage[], positions: number[]) =>
   images.filter((_, index) => !positions.includes(index + 1))
 
 export const products: Product[] = [
+  {
+    slug: 'uhpc-custom-components',
+    name: 'UHPC Curtain Wall Panels',
+    groupId: 'uhpc-curtain-wall',
+    summary: 'Custom UHPC facade panels developed from architectural drawings.',
+    description: 'UHPC curtain wall panels are project-specific facade components made from ultra-high performance concrete. Panel geometry, dimensions, surface finish and connection details are reviewed against the project drawings before production.',
+    highlights: [
+      'Panel geometry developed from project drawings',
+      'Surface texture and finish reviewed for each project',
+      'Dimensions and connection details confirmed during technical review',
+    ],
+    confirmWithUs: [
+      'Facade drawings and design reference',
+      'Panel dimensions and quantities',
+      'Surface finish and colour requirements',
+      'Connection and installation interface',
+    ],
+    image: { src: feedbackMedia.uhpc, alt: 'Customer supplied formed UHPC facade component', fit: 'contain', background: 'photo' },
+    gallery: [{ src: feedbackMedia.uhpc, alt: 'Customer supplied formed UHPC facade component', fit: 'contain', background: 'photo' }],
+  },
   {
     slug: 'eps-decorative-mouldings',
     name: 'EPS Decorative Mouldings',
@@ -170,15 +190,15 @@ export const products: Product[] = [
   },
   {
     slug: 'cement-texture-design-objects',
-    name: 'Cement-Texture Design Objects',
+    name: 'Cement Craft Ornaments',
     groupId: 'craft-ornaments',
-    summary: 'Cement-textured objects, from desk pieces to sculptural forms.',
+    summary: 'Customer supplied cement-texture objects and outdoor planters.',
     description:
-      'Cement-texture design objects show how form and surface can be developed beyond building elements: sculptural busts, trays, organisers and abstract pieces in white and grey cement tones. 3D printers and engraving machines support form development.',
+      'The supplied craft collection includes sculptural objects for interior display and large planters shown in outdoor and workshop photos. Final shape, dimensions and surface finish are confirmed against the design reference for each order.',
     highlights: [
-      'White and grey cement tones',
-      'Sculptural and functional forms',
-      'Form development supported by 3D printing and engraving',
+      'Sculptural objects and functional planters in the supplied collection',
+      'Indoor display and outdoor landscape references',
+      'Shape and finish reviewed against the customer design reference',
     ],
     confirmWithUs: [
       'Design reference or 3D file note',
@@ -187,14 +207,16 @@ export const products: Product[] = [
       'Project location',
     ],
     image: {
-      src: '/images/products/cement-texture-design-objects.jpg',
-      alt: 'White and grey cement design objects on a desk, including busts, trays and desk organisers',
-      fit: 'contain',
+      src: feedbackMedia.craftObjects,
+      alt: 'Customer supplied sculptural craft ornament',
+      fit: 'cover',
       background: 'photo',
     },
-    cardFit: 'cover',
-    cardFocal: '50% 50%',
-    gallery: numberedGallery('cement-design', 2, 'Cement-texture design object'),
+    gallery: [
+      { src: feedbackMedia.craftObjects, alt: 'Customer supplied sculptural craft ornament', fit: 'cover', background: 'photo' },
+      { src: feedbackMedia.craftPlantersOutdoor, alt: 'Customer supplied outdoor planter application photo', fit: 'cover', background: 'photo' },
+      { src: feedbackMedia.craftPlantersWorkshop, alt: 'Customer supplied planters in the workshop', fit: 'cover', background: 'photo' },
+    ],
   },
 ]
 

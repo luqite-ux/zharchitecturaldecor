@@ -12,6 +12,8 @@ export const feedbackMedia = {
   grgRelief: `${base}image30-f4495bb5a1f8c1ef46a9.jpeg`,
   grgForms: `${base}image31-e3d17add52a6c80012c2.jpeg`,
   craftObjects: `${base}image5-19b044c62d8991c0fd8f.png`,
+  craftPlantersOutdoor: `${base}image14-4dbe376616d88814e44e.png`,
+  craftPlantersWorkshop: `${base}image15-f1f541e34b33def2cc11.png`,
   fochengTemple: [
     `${base}image17-8a26905d3f29354d35df.png`,
     `${base}image18-f1e8f29ebd69e1e92d28.png`,

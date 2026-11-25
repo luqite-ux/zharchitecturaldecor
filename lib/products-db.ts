@@ -35,7 +35,11 @@ export async function getProductCatalog(): Promise<{ products: Product[]; groups
       description: row.description_i18n?.en || fallback.description,
       summary: row.description_i18n?.en || fallback.summary,
       image: row.image_url ? { ...fallback.image, src: row.image_url } : fallback.image,
-      gallery: extra?.images?.length ? extra.images.map((src, index) => ({ src, alt: `${row.name_i18n?.en || fallback.name} — image ${index + 1}`, fit: 'contain' as const, background: 'white' as const })) : fallback.gallery,
+      gallery: extra?.images?.length ? extra.images.map((src, index) => {
+        const supplied = fallback.gallery?.find((image) => image.src === src)
+        return { src, alt: supplied?.alt || `${row.name_i18n?.en || fallback.name} — image ${index + 1}`,
+          fit: supplied?.fit || 'contain' as const, background: supplied?.background || 'white' as const }
+      }) : fallback.gallery,
     })
   }
   return { products: output.length ? output : fallbackProducts, groups }

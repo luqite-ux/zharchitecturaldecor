@@ -1,0 +1,157 @@
+{
+  "tenantId": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+  "rows": [
+    {
+      "id": "90af665c-7335-45f4-8e53-2a54ce7b91df",
+      "tenant_id": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+      "name": "Cement-Texture Design Objects",
+      "name_en": "Cement-Texture Design Objects",
+      "description": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.",
+      "description_en": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.",
+      "image_url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/cement-texture-design-objects/1.jpg",
+      "category": "Custom Design Objects",
+      "sort_order": 7,
+      "is_active": true,
+      "created_at": "2026-11-14T11:11:26.271073+00:00",
+      "updated_at": "2026-11-14T11:11:26.271073+00:00",
+      "name_i18n": {
+        "en": "Cement-Texture Design Objects"
+      },
+      "description_i18n": {
+        "en": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support."
+      },
+      "model": "Custom",
+      "category_slug": "cement-craft-ornaments",
+      "features": [
+        "Developed from project drawings or design reference",
+        "Manufactured on dedicated in-house equipment",
+        "Dimensions and finish confirmed during RFQ"
+      ],
+      "applications": [
+        "Architectural façades",
+        "Interior public spaces",
+        "Residential and public building projects"
+      ],
+      "advantages": [],
+      "specs": {
+        "Final dimensions": "Confirmed during RFQ",
+        "Development input": "Reference image, drawing or 3D file"
+      },
+      "certification_no": null,
+      "standard": null,
+      "overview": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.",
+      "overview_en": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support.",
+      "slug": "cement-texture-design-objects",
+      "extra_data": {
+        "images": [
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/cement-texture-design-objects/1.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/cement-texture-design-objects/2.jpg"
+        ],
+        "source": "customer-supplied material set",
+        "optimized_at": "2026-11-18",
+        "seo_title_i18n": {
+          "en": "Cement-Texture Design Objects | Zhenghui"
+        },
+        "optimized_source": "Y:\\客户资料1\\1563-环球出海安徽正辉装饰有限公司服务\\产品优化",
+        "seo_description_i18n": {
+          "en": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support."
+        }
+      },
+      "features_i18n": {
+        "en": [
+          "Developed from project drawings or design reference",
+          "Manufactured on dedicated in-house equipment",
+          "Dimensions and finish confirmed during RFQ"
+        ]
+      },
+      "applications_i18n": {
+        "en": [
+          "Architectural façades",
+          "Interior public spaces",
+          "Residential and public building projects"
+        ]
+      },
+      "advantages_i18n": {
+        "en": []
+      },
+      "overview_i18n": {
+        "en": "Cement-textured sculptural and functional objects developed with engraving and 3D-printing support."
+      }
+    },
+    {
+      "id": "b457d6b3-cda5-49a9-99d7-0f0e7b781ea8",
+      "tenant_id": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+      "name": "UHPC Custom Components",
+      "name_en": "UHPC Custom Components",
+      "description": "Custom UHPC components for curved and sculptural architectural forms.",
+      "description_en": "Custom UHPC components for curved and sculptural architectural forms.",
+      "image_url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/products/samples/01/b75b48a028caefbb4725.jpg",
+      "category": "Custom Design Objects",
+      "sort_order": 8,
+      "is_active": false,
+      "created_at": "2026-11-14T11:11:26.346807+00:00",
+      "updated_at": "2026-11-14T11:11:26.346807+00:00",
+      "name_i18n": {
+        "en": "UHPC Custom Components"
+      },
+      "description_i18n": {
+        "en": "Custom UHPC components for curved and sculptural architectural forms."
+      },
+      "model": "UHPC",
+      "category_slug": "uhpc-curtain-wall",
+      "features": [
+        "Developed from project drawings or design reference",
+        "Manufactured on dedicated in-house equipment",
+        "Dimensions and finish confirmed during RFQ"
+      ],
+      "applications": [
+        "Architectural façades",
+        "Interior public spaces",
+        "Residential and public building projects"
+      ],
+      "advantages": [],
+      "specs": {
+        "Development input": "Design intent, drawings or 3D model",
+        "Monthly GRC / UHPC capacity": "12,000 m²"
+      },
+      "certification_no": null,
+      "standard": null,
+      "overview": "Custom UHPC components for curved and sculptural architectural forms.",
+      "overview_en": "Custom UHPC components for curved and sculptural architectural forms.",
+      "slug": "uhpc-custom-components",
+      "extra_data": {
+        "images": [
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/products/samples/01/b75b48a028caefbb4725.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/products/samples/02/515cfa1add19d25e76ee.jpg"
+        ],
+        "source": "customer-supplied material set",
+        "seo_title_i18n": {
+          "en": "UHPC Custom Components | Zhenghui"
+        },
+        "seo_description_i18n": {
+          "en": "Custom UHPC components for curved and sculptural architectural forms."
+        }
+      },
+      "features_i18n": {
+        "en": [
+          "Developed from project drawings or design reference",
+          "Manufactured on dedicated in-house equipment",
+          "Dimensions and finish confirmed during RFQ"
+        ]
+      },
+      "applications_i18n": {
+        "en": [
+          "Architectural façades",
+          "Interior public spaces",
+          "Residential and public building projects"
+        ]
+      },
+      "advantages_i18n": {
+        "en": []
+      },
+      "overview_i18n": {
+        "en": "Custom UHPC components for curved and sculptural architectural forms."
+      }
+    }
+  ]
+}
