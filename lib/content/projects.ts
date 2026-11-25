@@ -18,8 +18,8 @@ export interface ProjectCase {
 export const projectCases: ProjectCase[] = [
   {
     slug: 'luhe-cuihu-meishu',
-    nameZh: '六合·翠湖美墅项目',
-    nameEn: 'Luhe · Cuihu Meishu Project',
+    nameZh: '翠湖美墅项目',
+    nameEn: 'Cuihu Meishu Project',
     place: 'Luhe',
     image: {
       src: '/images/projects-optimized/luhe-cuihu-meishu-hd.png',
@@ -30,7 +30,7 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'lishui-pingxi-jiayuan',
-    nameZh: '溧水·屏溪佳苑项目',
+    nameZh: '溧水·平溪嘉苑项目',
     nameEn: 'Lishui · Pingxi Jiayuan Project',
     place: 'Lishui',
     image: {
@@ -42,7 +42,7 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'lishui-vanke-city',
-    nameZh: '溧水·万科城项目',
+    nameZh: '溧水·万科城市项目',
     nameEn: 'Lishui · Vanke City Project',
     place: 'Lishui',
     image: {
@@ -55,8 +55,8 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'nanjing-zijin-huafu',
-    nameZh: '南京·紫金华府项目',
-    nameEn: 'Nanjing · Zijin Huafu Project',
+    nameZh: '紫金华府项目',
+    nameEn: 'Zijin Huafu Project',
     place: 'Nanjing',
     image: {
       src: '/images/projects-optimized/nanjing-zijin-huafu.jpg',
@@ -80,7 +80,7 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'nanjing-nanwanying-phase-2-3',
-    nameZh: '南京南湾营二、三期经济适用房项目',
+    nameZh: '南京南湾营二期和三期经济适用房项目',
     nameEn: 'Nanjing Nanwanying Phases II and III Affordable Housing Project',
     place: 'Nanjing',
     image: {
@@ -92,8 +92,8 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'taian-city-landscape', nameZh: '山东泰安城市景观', nameEn: 'Tai’an City Landscape', place: 'Tai’an',
-    image: { src: '/images/projects-optimized/taian-city-landscape.jpg', alt: 'Curved white landscape seating in Tai’an', fit: 'cover', background: 'photo' },
-    gallery: ['/images/projects-optimized/taian-city-landscape-2.jpg', '/images/projects-optimized/taian-city-landscape-3.jpg'],
+    image: { src: '/images/projects-optimized/taian-city-landscape-2.jpg', alt: 'Illuminated landscape seating in Tai’an at night', fit: 'cover', background: 'photo' },
+    gallery: ['/images/projects-optimized/taian-city-landscape.jpg', '/images/projects-optimized/taian-city-landscape-3.jpg'],
   },
   {
     slug: 'suzhou-shengze-school', nameZh: '苏州盛泽丝绸职业学校', nameEn: 'Suzhou Shengze Silk Vocational School', place: 'Suzhou',
@@ -102,7 +102,7 @@ export const projectCases: ProjectCase[] = [
   },
   {
     slug: 'jinhu-focheng-temple', nameZh: '淮安金湖佛城寺', nameEn: 'Jinhu Focheng Temple', place: 'Huai’an',
-    image: { src: feedbackMedia.fochengTemple[0], alt: 'Customer supplied photograph of Jinhu Focheng Temple', fit: 'cover', background: 'photo' },
-    gallery: [...feedbackMedia.fochengTemple.slice(1)],
+    image: { src: feedbackMedia.fochengTemple[2], alt: 'Customer supplied overall view of Jinhu Focheng Temple', fit: 'cover', background: 'photo' },
+    gallery: [...feedbackMedia.fochengTemple.slice(0, 2)],
   },
 ]

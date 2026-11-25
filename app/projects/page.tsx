@@ -50,7 +50,7 @@ export default function ProjectsPage() {
             ))}
           </ul>
           <p className="mt-10 max-w-2xl text-sm text-ink-soft">
-            Images are extracted from the customer-supplied project brochure and show the named developments.
+            Images come from customer-supplied project materials and show the named developments.
           </p>
           <Link
             href="/contact"

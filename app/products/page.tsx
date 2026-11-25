@@ -1,10 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { PageHero } from '@/components/site/page-hero'
 import { ProductCard } from '@/components/site/product-card'
 import { Reveal, Section, SectionHeading } from '@/components/site/section'
 import { getProductCatalog } from '@/lib/products-db'
 import { pendingProductTypes } from '@/lib/content/products'
+import { feedbackMedia } from '@/lib/content/customer-feedback-media'
+
+const decorativeLineReferences = [
+  { src: feedbackMedia.decorativeLineReferences[0], alt: 'Customer supplied decorative line installation', width: 790, height: 576 },
+  { src: feedbackMedia.decorativeLineReferences[1], alt: 'Customer supplied facade line detail', width: 1279, height: 1706 },
+  { src: feedbackMedia.decorativeLineReferences[2], alt: 'Customer supplied decorative relief samples', width: 642, height: 645 },
+  { src: feedbackMedia.decorativeLineReferences[3], alt: 'Customer supplied profile stock', width: 800, height: 800 },
+  { src: feedbackMedia.decorativeLineReferences[4], alt: 'Customer supplied formed line sample', width: 600, height: 834 },
+]
 
 export const revalidate = 60
 
@@ -60,6 +70,19 @@ export default async function ProductsPage() {
                   </li>
                 ))}
             </ul>
+            {group.id === 'decorative-mouldings' ? (
+              <div className="mt-10">
+                <h3 className="text-2xl text-ink">Supplied decorative line references</h3>
+                <p className="mt-2 text-sm text-ink-soft">Additional photos from the customer workbook, shown as material references.</p>
+                <ul className="mt-5 grid grid-cols-2 items-start gap-4 lg:grid-cols-5">
+                  {decorativeLineReferences.map((image, index) => (
+                    <Reveal as="li" key={image.src} index={index} className="overflow-hidden rounded-2xl bg-stone">
+                      <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 1024px) 18vw, 48vw" className="h-auto w-full" />
+                    </Reveal>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
             {(pendingProductTypes[group.id] ?? []).length > 0 ? (
               <ul className="mt-8 flex flex-wrap gap-3" aria-label={`${group.name} additional types`}>
                 {pendingProductTypes[group.id]?.map((name) => (

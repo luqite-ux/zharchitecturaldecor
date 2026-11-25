@@ -1,0 +1,80 @@
+{
+  "tenantId": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+  "rows": [
+    {
+      "id": "5df3a697-d7a2-48f3-acfd-cf26ae90a7cc",
+      "tenant_id": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+      "slug": "eps-decorative-mouldings",
+      "image_url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/1.jpg",
+      "extra_data": {
+        "images": [
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/1.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/3.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/5.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/6.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/7.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/eps-decorative-mouldings/9.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image29-51d40b34a0ee1b103092.jpeg"
+        ],
+        "source": "customer-supplied material set",
+        "optimized_at": "2026-11-18",
+        "seo_title_i18n": {
+          "en": "EPS Decorative Mouldings | Zhenghui"
+        },
+        "optimized_source": "Y:\\客户资料1\\1563-环球出海安徽正辉装饰有限公司服务\\产品优化",
+        "seo_description_i18n": {
+          "en": "Profiled EPS mouldings for cornices, bands and façade lines."
+        }
+      }
+    },
+    {
+      "id": "9377f93a-bad6-448f-963b-1af65eaab862",
+      "tenant_id": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+      "slug": "grg-interior-elements",
+      "image_url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/2.jpg",
+      "extra_data": {
+        "images": [
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/2.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/3.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/4.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/5.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/6.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/7.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/8.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/9.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/10.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grg-interior-elements/11.jpg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image30-f4495bb5a1f8c1ef46a9.jpeg",
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image31-e3d17add52a6c80012c2.jpeg"
+        ],
+        "source": "customer-supplied material set",
+        "optimized_at": "2026-11-18",
+        "seo_title_i18n": {
+          "en": "GRG Interior Decorative Elements | Zhenghui"
+        },
+        "optimized_source": "Y:\\客户资料1\\1563-环球出海安徽正辉装饰有限公司服务\\产品优化",
+        "seo_description_i18n": {
+          "en": "GRG columns, relief panels and ornamental components for interior public spaces."
+        }
+      }
+    },
+    {
+      "id": "b457d6b3-cda5-49a9-99d7-0f0e7b781ea8",
+      "tenant_id": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+      "slug": "uhpc-custom-components",
+      "image_url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image8-c77da7a75cf321daaf02.png",
+      "extra_data": {
+        "images": [
+          "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261124/image8-c77da7a75cf321daaf02.png"
+        ],
+        "source": "2026-11-24 customer workbook image 8; 2026-11-25 customer-approved AI introduction, edited to remove unverified performance claims",
+        "seo_title_i18n": {
+          "en": "UHPC Curtain Wall Panels | Zhenghui"
+        },
+        "seo_description_i18n": {
+          "en": "UHPC curtain wall panels are project-specific facade components made from ultra-high performance concrete. Panel geometry, dimensions, surface finish and connection details are reviewed against the project drawings before production."
+        }
+      }
+    }
+  ]
+}

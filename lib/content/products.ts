@@ -96,7 +96,10 @@ export const products: Product[] = [
       'Connection and installation interface',
     ],
     image: { src: feedbackMedia.uhpc, alt: 'Customer supplied formed UHPC facade component', fit: 'contain', background: 'photo' },
-    gallery: [{ src: feedbackMedia.uhpc, alt: 'Customer supplied formed UHPC facade component', fit: 'contain', background: 'photo' }],
+    gallery: [
+      { src: feedbackMedia.uhpc, alt: 'Customer supplied formed UHPC facade component', fit: 'contain', background: 'photo' },
+      ...feedbackMedia.uhpcGallery.map((src, index) => ({ src, alt: `Customer supplied UHPC component photo ${index + 2}`, fit: 'contain' as const, background: 'photo' as const })),
+    ],
   },
   {
     slug: 'eps-decorative-mouldings',
@@ -126,6 +129,7 @@ export const products: Product[] = [
     gallery: [
       ...withoutImages(numberedGallery('eps', 9, 'EPS decorative moulding'), [2, 4, 8]),
       { src: feedbackMedia.epsProfile, alt: 'Customer supplied EPS decorative profiles', fit: 'contain', background: 'white' },
+      { src: feedbackMedia.epsFacade, alt: 'Customer supplied facade with decorative line detail', fit: 'cover', background: 'photo' },
     ],
   },
   {
@@ -186,6 +190,7 @@ export const products: Product[] = [
       ...withoutImages(numberedGallery('grg', 12, 'GRG interior decorative element'), [1, 12]),
       { src: feedbackMedia.grgRelief, alt: 'Customer supplied GRG relief panel', fit: 'contain', background: 'photo' },
       { src: feedbackMedia.grgForms, alt: 'Customer supplied GRG formed components', fit: 'contain', background: 'photo' },
+      ...feedbackMedia.grgWorkbook.map((src, index) => ({ src, alt: `Customer supplied GRG formed detail ${index + 1}`, fit: 'contain' as const, background: 'photo' as const })),
     ],
   },
   {
