@@ -41,6 +41,7 @@ export default function ProjectsPage() {
                   <div className="flex flex-1 flex-col gap-2 p-6">
                     <span className="eyebrow">Case {String(i + 1).padStart(2, '0')}</span>
                     <h3 className="text-xl text-ink">{p.nameEn}</h3>
+                    <p lang="zh-CN" className="text-sm text-ink-soft">{p.nameZh}</p>
                   </div>
                   {p.gallery?.length ? <div className="grid grid-cols-3 gap-1 p-2 pt-0">
                     {p.gallery.map((src, index) => <div key={src} className="relative aspect-[4/3]"><Image src={src} alt={`${p.nameEn} image ${index + 2}`} fill sizes="(min-width: 1024px) 11vw, 30vw" className="object-cover" /></div>)}

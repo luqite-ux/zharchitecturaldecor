@@ -127,6 +127,7 @@ export function ProjectsStack() {
                       Case {String(i + 1).padStart(2, '0')} / {String(projectCases.length).padStart(2, '0')}
                     </p>
                     <h3 className="mt-3 text-balance text-2xl sm:text-3xl">{project.nameEn}</h3>
+                    <p lang="zh-CN" className="mt-2 text-sm text-ink-soft">{project.nameZh}</p>
                   </div>
                   <Link
                     href={`/projects#${project.slug}`}

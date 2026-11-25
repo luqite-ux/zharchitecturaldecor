@@ -55,7 +55,7 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 | EXTRA-01 | 表格红框内 UHPC、装饰线条、GRG、工艺品图片没有更新全 | 按 Excel 绘图锚点复核；UHPC 七图、EPS 补图、GRG 两图写入精确租户产品图库；不同材料的装饰线条图作为大类参考展示，不混入 EPS 产品；工艺品三图保持 | 待双端复审 | https://zharchitecturaldecor.com/products |
 | EXTRA-02 | 泰安城市景观卡片：原封面放下，夜景图放封面 | 调整封面与缩略图顺序 | 待双端复审 | https://zharchitecturaldecor.com/projects#taian-city-landscape |
 | EXTRA-03 | 金湖佛城寺卡片：近景放下，全景图放封面 | 调整封面与缩略图顺序 | 待双端复审 | https://zharchitecturaldecor.com/projects#jinhu-focheng-temple |
-| EXTRA-04 | 前六个案例名称按客户中文标注核正 | 逐条更新静态案例的中文正式名称及相关英文展示名；不修改其它案例 | 待双端复审 | https://zharchitecturaldecor.com/projects |
+| EXTRA-04 | 前六个案例名称按客户中文标注核正 | 逐条更新静态案例的中文正式名称及相关英文展示名；项目页与首页案例区同时展示原中文名供核对，不修改其它案例 | 待双端复审 | https://zharchitecturaldecor.com/projects |
 | EXTRA-05 | 首页工厂设备图右后方杂物清理 | 基于客户真实原图做局部 AI 修图，保留机器结构；原图继续留存，新图 `public/images/factory/engraving-machine-daylight-cleaned.png` 在首页和制造页共用 | 待双端复审 | https://zharchitecturaldecor.com/#home-manufacturing |
 
 表格新增上传 7 张，清单为 `customer-feedback-20261124-media.json`。数据库修改前快照为 `customer-feedback-20261125-additional-before-db.json`；只更新租户 `831d7976-d1b4-4f3d-b09c-1b2448c1e86b` 的 UHPC、EPS、GRG 既有记录图库，回读图库数量分别为 7、8、14。标注蓝框中的带说明文字拼图未直接公开采用。设备修图通过内建 imagegen 对 `engraving-machine-daylight.png` 编辑，提示词限定保留机器、车间结构、镜头与颜色，只清理右后方散乱边角料；新图已目视核对机器主体，仍须正式域名双端复审。
