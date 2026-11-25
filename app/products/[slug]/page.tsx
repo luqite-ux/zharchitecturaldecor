@@ -114,7 +114,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               title={`${product.name} in the supplied material set`}
               lead="These images come from the customer-supplied product material and are shown without changing the product structure or proportions."
             />
-            <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="mt-10 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {product.gallery.map((image, index) => (
                 <Reveal as="li" key={image.src} index={index} className="overflow-hidden rounded-3xl bg-white">
                   <ProductVisual image={image} aspect={product.slug === 'cement-texture-design-objects' && index === 0 ? 'aspect-square' : 'aspect-[4/3]'} tone={product.slug === 'cement-texture-design-objects' && index === 0 ? 'bg-black' : 'bg-white'} sizes="(min-width: 1024px) 33vw, 50vw" />
