@@ -75,6 +75,8 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 
 | 编号 | 客户原话与位置 | 来源图片 | 修改与预期结果 | 状态 | 审核链接 |
 |---|---|---|---|---|---|
-| EXTRA-08 | “新添加了几张设备图片”“添加到公司介绍的轮播图里面” | `幕墙线条综合图片(1).xlsx` 的 3D 打印机行 C10/D10/E10、精密推锯台行 C11、木工雕刻机行 C12，合计 5 张 | 首页公司介绍的制造轮播保留原图，并追加 5 张设备原图；桌面与手机端逐张点击、核对画面与设备标题 | 待正式域名双端复审 | https://zharchitecturaldecor.com/#home-manufacturing |
+| EXTRA-08 | “新添加了几张设备图片”“添加到公司介绍的轮播图里面” | `幕墙线条综合图片(1).xlsx` 的 3D 打印机行 C10/D10/E10、精密推锯台行 C11、木工雕刻机行 C12，合计 5 张 | 首页公司介绍的制造轮播保留原图，并追加 5 张设备原图；桌面与手机端逐张点击、核对画面与设备标题 | PASS：正式域名双端 11 屏逐一加载、点击、核图，末屏回到首屏，无破图或横向溢出 | https://zharchitecturaldecor.com/#home-manufacturing |
 
 图片源映射：C10=`xl/media/image25.png`；D10=`image33.png`；E10=`image34.png`；C11=`image36.png`；C12=`image35.png`。图片直接取自 Excel 嵌入媒体，未生成、改写设备或删改原图。此项只涉及首页静态轮播和本客户静态资源，不涉及数据库/R2。
+
+上线与复审：源码提交 `4117e5456d75f0210fdd48c9dbebd040282b05b8` 经公司 GitHub API 回读与远端 main 一致；Vercel Production `dpl_HcRdM9uwF7EgAjYdMUQaHYuf8nGM` READY 且正式域名采用该部署。正式域名 1440px 桌面端与 390px 手机端各切换 11 屏，共 22 屏；新增图第 7–11 屏双端截图保存在 `customer-feedback-20261124-browser/extra08-07-desktop.png` 至 `extra08-11-mobile.png`。图片 URL 的部署标记与该 Production 一致，10 张新增图呈现均目视核对，原有 6 屏仍可访问。
