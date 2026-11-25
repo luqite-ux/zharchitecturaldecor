@@ -117,7 +117,14 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <ul className="mt-10 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {product.gallery.map((image, index) => (
                 <Reveal as="li" key={image.src} index={index} className="overflow-hidden rounded-3xl bg-white">
-                  <ProductVisual image={image} aspect={product.slug === 'cement-texture-design-objects' && index === 0 ? 'aspect-square' : 'aspect-[4/3]'} tone={product.slug === 'cement-texture-design-objects' && index === 0 ? 'bg-black' : 'bg-white'} sizes="(min-width: 1024px) 33vw, 50vw" />
+                  <ProductVisual
+                    image={image}
+                    aspect={product.slug === 'cement-texture-design-objects' && index === 0 ? 'aspect-square' :
+                      /\/image(?:9|10|12|20)-/.test(image.src) ? 'aspect-[3/4]' :
+                      /\/image7-/.test(image.src) ? 'aspect-[9/10]' : 'aspect-[4/3]'}
+                    tone={product.slug === 'cement-texture-design-objects' && index === 0 ? 'bg-black' : image.background === 'photo' ? 'bg-stone' : 'bg-white'}
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                  />
                 </Reveal>
               ))}
             </ul>
