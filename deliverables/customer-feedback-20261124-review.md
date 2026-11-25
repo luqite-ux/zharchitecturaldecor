@@ -70,3 +70,11 @@ Excel 中另有“PS 矫正一下多余文字 P 掉”的备注。当前采用�
 | EXTRA-07 | 首页 Outdoor Scenes 仍用泰安旧封面 | 改用泰安案例已确认的夜景封面，入口仍指向泰安案例 | PASS：正式域名 1440px、390px 夜景图加载并目视确认，手机裁切正常 | https://zharchitecturaldecor.com/#home-applications |
 
 本轮源码提交 `230caae09abddb246bf2b03c7e0d5059ff959eba` 已推送并经公司 GitHub API 回读。Vercel Production `dpl_6A2vJhgF9HdsabVC5nsTN6Z1uoiL` READY，正式域名 HTML 及图片 URL 的部署标记一致。浏览器证据为 `customer-feedback-20261124-browser/finalfix-*`，其中 `finalfix-outdoor-mobile.png` 直接展示手机端夜景卡片。桌面端 12 个公开路由与手机端 12 个公开路由分批复审：第一次手机端工艺品详情页导航发生 `ERR_CONNECTION_CLOSED`，重试后该页及后续页面均 HTTP 200、无破图和横向溢出；第一次通过的手机前五页证据见 `final-sweep-*-mobile.png`。本轮两项没有未验证项。
+
+## 2026-11-25 补充设备图片
+
+| 编号 | 客户原话与位置 | 来源图片 | 修改与预期结果 | 状态 | 审核链接 |
+|---|---|---|---|---|---|
+| EXTRA-08 | “新添加了几张设备图片”“添加到公司介绍的轮播图里面” | `幕墙线条综合图片(1).xlsx` 的 3D 打印机行 C10/D10/E10、精密推锯台行 C11、木工雕刻机行 C12，合计 5 张 | 首页公司介绍的制造轮播保留原图，并追加 5 张设备原图；桌面与手机端逐张点击、核对画面与设备标题 | 待正式域名双端复审 | https://zharchitecturaldecor.com/#home-manufacturing |
+
+图片源映射：C10=`xl/media/image25.png`；D10=`image33.png`；E10=`image34.png`；C11=`image36.png`；C12=`image35.png`。图片直接取自 Excel 嵌入媒体，未生成、改写设备或删改原图。此项只涉及首页静态轮播和本客户静态资源，不涉及数据库/R2。

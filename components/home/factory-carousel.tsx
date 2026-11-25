@@ -11,6 +11,11 @@ const slides = [
   { src: feedbackMedia.factoryForming, alt: 'Workers forming a curved component in the production hall', caption: 'Component forming' },
   { src: feedbackMedia.factoryYard, alt: 'Finished components in the customer factory yard', caption: 'Factory yard' },
   { src: feedbackMedia.factoryWorkshop, alt: 'Workers handling a large component in the production workshop', caption: 'Production workshop' },
+  { src: '/images/factory/3d-printers-20261125.png', alt: 'Two enclosed 3D printers in the Zhenghui workshop', caption: '3D printers' },
+  { src: '/images/factory/3d-printing-profile-20261125.png', alt: 'Profile sample inside a 3D printer', caption: '3D printing · profile sample' },
+  { src: '/images/factory/3d-printing-figurine-20261125.png', alt: 'Figurine sample inside a 3D printer', caption: '3D printing · form sample' },
+  { src: '/images/factory/precision-panel-saw-20261125.png', alt: 'Precision panel saw in the workshop', caption: 'Precision panel saw' },
+  { src: '/images/factory/woodworking-engraver-20261125.png', alt: 'Woodworking engraving machine in the production hall', caption: 'Woodworking engraving machine' },
 ]
 
 export function FactoryCarousel() {
