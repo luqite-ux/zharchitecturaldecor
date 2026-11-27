@@ -30,7 +30,9 @@ export const feedbackMedia = {
   ],
   epsProfile: `${base}image29-51d40b34a0ee1b103092.jpeg`,
   epsFacade: `${base}image20-ea7f7b6c3ff6dffd4c84.png`,
-  grcFacade: 'https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grc-architectural-elements/7.jpg',
+  grcFacade: 'https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grc-architectural-elements/9.jpg',
+  lishuiVankeCity: 'https://pub-c7a22068052144a5805830c30d280128.r2.dev/products/831d7976-d1b4-4f3d-b09c-1b2448c1e86b/optimized-20261118/grc-architectural-elements/8.jpg',
+  jiangyinTunnelTollStation: 'https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261127/jiangyin-tunnel-toll-station-5bed30687e9707db5e31.png',
   grgRelief: `${base}image30-f4495bb5a1f8c1ef46a9.jpeg`,
   grgForms: `${base}image31-e3d17add52a6c80012c2.jpeg`,
   grgWorkbook: [

@@ -1,0 +1,13 @@
+{
+  "tenantId": "831d7976-d1b4-4f3d-b09c-1b2448c1e86b",
+  "source": "20261127新添加幕墙线条综合图片.xlsx (Row 14, No. 11 江阴隧道收费站)",
+  "media": {
+    "jiangyinTunnelTollStation": {
+      "source": "C:\\Users\\Grandlin\\.gemini\\antigravity\\brain\\8e7b73b0-394b-4996-8503-66d739e0d4ec\\scratch\\excel_images\\r14_C14_dispimg.png",
+      "sha256": "5bed30687e9707db5e31753108166d8ea055f83957a0cd51fbaa4a7fe5346579",
+      "bytes": 6141026,
+      "key": "tenants/zharchitecturaldecor/customer-feedback-20261127/jiangyin-tunnel-toll-station-5bed30687e9707db5e31.png",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/tenants/zharchitecturaldecor/customer-feedback-20261127/jiangyin-tunnel-toll-station-5bed30687e9707db5e31.png"
+    }
+  }
+}

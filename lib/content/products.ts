@@ -152,12 +152,12 @@ export const products: Product[] = [
     ],
     capacity: { label: 'GRC / UHPC monthly capacity', value: 12000, unit: 'm²' },
     image: {
-      src: '/images/source/products/grc/2.jpg',
-      alt: 'Customer supplied GRC decorative components',
-      fit: 'contain',
-      background: 'white',
+      src: feedbackMedia.grcFacade,
+      alt: 'Customer supplied red-brick arched facade with GRC architectural decorative elements',
+      fit: 'cover',
+      background: 'photo',
     },
-    gallery: withoutImages(numberedGallery('grc', 16, 'GRC architectural decorative element'), [1]),
+    gallery: withoutImages(numberedGallery('grc', 16, 'GRC architectural decorative element'), [1, 7]),
   },
   {
     slug: 'grg-interior-elements',
