@@ -6,11 +6,11 @@ import { Reveal, Section, SectionHeading } from '@/components/site/section'
 
 export async function ProductSystems() {
   const { products, groups } = await getProductCatalog()
-  const suppliedCovers: Record<string, { src: string; alt: string; fit: 'contain' | 'cover'; background: 'white' | 'photo' }> = {
-    'uhpc-curtain-wall': { src: feedbackMedia.uhpc, alt: 'Customer supplied UHPC formed component', fit: 'contain', background: 'photo' },
-    'decorative-mouldings': { src: feedbackMedia.decorativeMouldings, alt: 'Customer supplied decorative moulding profiles in production', fit: 'cover', background: 'photo' },
+  const suppliedCovers: Record<string, { src: string; alt: string; fit: 'contain' | 'cover'; focal?: string; background: 'white' | 'photo' }> = {
+    'uhpc-curtain-wall': { src: feedbackMedia.uhpc, alt: 'Customer supplied UHPC formed component', fit: 'cover', background: 'photo' },
+    'decorative-mouldings': { src: '/images/products/decorative-mouldings-cover.jpg', alt: 'Customer supplied decorative moulding profiles in production', fit: 'cover', background: 'photo' },
     'grc-components': { src: feedbackMedia.grcFacade, alt: 'Customer supplied facade showing GRC architectural components', fit: 'cover', background: 'photo' },
-    'craft-ornaments': { src: feedbackMedia.craftObjects, alt: 'Customer supplied sculptural design object', fit: 'contain', background: 'photo' },
+    'craft-ornaments': { src: '/images/products/craft-ornaments-cover.jpg', alt: 'Customer supplied sculptural design object', fit: 'cover', background: 'photo' },
   }
   return (
     <Section sectionId="home-product-systems" labelledBy="product-systems-title">
@@ -25,7 +25,11 @@ export async function ProductSystems() {
           {groups.map((group, i) => {
             const items = products.filter((product) => product.groupId === group.id)
             const lead = items[0]
-            const cover = suppliedCovers[group.id] ?? lead?.image
+            const cover = suppliedCovers[group.id] ?? (lead?.image ? {
+              ...lead.image,
+              fit: lead.cardFit ?? 'cover',
+              focal: lead.cardFocal ?? lead.image.focal,
+            } : undefined)
             return (
               <Reveal
                 key={group.id}
@@ -37,7 +41,7 @@ export async function ProductSystems() {
                   {cover ? <ProductVisual
                     image={cover}
                     aspect="aspect-[4/3]"
-                    tone={group.id === 'craft-ornaments' ? 'bg-black' : 'bg-transparent'}
+                    tone="bg-transparent"
                     sizes="(min-width: 1280px) 20vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   /> : null}
                   <div className="flex flex-1 flex-col p-6">
